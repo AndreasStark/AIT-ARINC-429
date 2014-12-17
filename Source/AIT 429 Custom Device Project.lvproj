@@ -31,7 +31,7 @@
 			<Item Name="Custom Device AIT 429.xml" Type="Document" URL="../Custom Device AIT 429.xml"/>
 			<Item Name="AIT 429 System Explorer.lvlib" Type="Library" URL="../System Explorer/AIT 429 System Explorer.lvlib"/>
 			<Item Name="AIT 429 Engine.lvlib" Type="Library" URL="../RT Driver/AIT 429 Engine.lvlib"/>
-			<Item Name="ARINC 429 Shared.lvlib" Type="Library" URL="../ARINC 429 Shared.lvlib"/>
+			<Item Name="ARINC 429 Shared.lvlib" Type="Library" URL="../Shared/ARINC 429 Shared.lvlib"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
