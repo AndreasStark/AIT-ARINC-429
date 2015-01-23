@@ -4,4 +4,6 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">302022660</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Item Name="Engine" Type="Folder"/>
+	<Item Name="Types" Type="Folder"/>
 </Library>

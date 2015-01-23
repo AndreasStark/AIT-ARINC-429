@@ -5,15 +5,15 @@
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Item Name="Controls and Global" Type="Folder">
-		<Item Name="Global.vi" Type="VI" URL="../Shared/Controls and Global/Global.vi"/>
-		<Item Name="Label.ctl" Type="VI" URL="../Shared/Controls and Global/Label.ctl"/>
-		<Item Name="Number of Bits.ctl" Type="VI" URL="../Shared/Controls and Global/Number of Bits.ctl"/>
-		<Item Name="Specify module by.ctl" Type="VI" URL="../Shared/Controls and Global/Specify module by.ctl"/>
-		<Item Name="Start Bit.ctl" Type="VI" URL="../Shared/Controls and Global/Start Bit.ctl"/>
-		<Item Name="transferPeriod.ctl" Type="VI" URL="../Shared/Controls and Global/transferPeriod.ctl"/>
-		<Item Name="TransferType.ctl" Type="VI" URL="../Shared/Controls and Global/TransferType.ctl"/>
+		<Item Name="Global.vi" Type="VI" URL="../Controls and Global/Global.vi"/>
+		<Item Name="Label.ctl" Type="VI" URL="../Controls and Global/Label.ctl"/>
+		<Item Name="Number of Bits.ctl" Type="VI" URL="../Controls and Global/Number of Bits.ctl"/>
+		<Item Name="Specify module by.ctl" Type="VI" URL="../Controls and Global/Specify module by.ctl"/>
+		<Item Name="Start Bit.ctl" Type="VI" URL="../Controls and Global/Start Bit.ctl"/>
+		<Item Name="transferPeriod.ctl" Type="VI" URL="../Controls and Global/transferPeriod.ctl"/>
+		<Item Name="TransferType.ctl" Type="VI" URL="../Controls and Global/TransferType.ctl"/>
 	</Item>
 	<Item Name="Shared" Type="Folder">
-		<Item Name="Word to double.vi" Type="VI" URL="../Shared/Word to double.vi"/>
+		<Item Name="Word to double.vi" Type="VI" URL="../Word to double.vi"/>
 	</Item>
 </Library>
