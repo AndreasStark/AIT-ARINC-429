@@ -94,9 +94,6 @@
 			<Item Name="owl429serialization.dll" Type="Document" URL="owl429serialization.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../../../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
-			<Item Name="SEA_9811_count_Chn_Rx_words.vi" Type="VI" URL="../../../SEA 9811 FPGA driver/RT/SEA_9811_count_Chn_Rx_words.vi"/>
-			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../../../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
 			<Item Name="SEA9811_RT_data_cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/SEA9811_RT_data_cluster.ctl"/>
 			<Item Name="FPGA ref.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/FPGA ref.ctl"/>
 			<Item Name="channel.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/channel.ctl"/>
@@ -108,9 +105,34 @@
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="9082_SEA_9811_9220_IOsim.lvbitx" Type="Document" URL="../SEA 9811 FPGA driver/FPGA Bitfiles/9082_SEA_9811_9220_IOsim.lvbitx"/>
 			<Item Name="SEA_9811_Start.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Start.vi"/>
 			<Item Name="SEA_9811_Close.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Close.vi"/>
+			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
+			<Item Name="SEA-9811_ReceiverAndTransmitter_RSR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RSR.ctl"/>
+			<Item Name="SEA_9811_Clock_sync.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Clock_sync.vi"/>
+			<Item Name="SEA-9811_FPGA_9082__9862_9862_9811_9220.lvbitx" Type="Document" URL="../SEA 9811 FPGA driver/FPGA Bitfiles/SEA-9811_FPGA_9082__9862_9862_9811_9220.lvbitx"/>
+			<Item Name="SEA_9811_RT_FIFO_processor.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_RT_FIFO_processor.vi"/>
+			<Item Name="SEA_9811_reset_rx_word_counter.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_reset_rx_word_counter.vi"/>
+			<Item Name="SEA_9811_ARINCword2data.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_ARINCword2data.vi"/>
+			<Item Name="ARINC word.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/ARINC word.ctl"/>
+			<Item Name="ARINC word cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/ARINC word cluster.ctl"/>
+			<Item Name="SEA_9811_Word_to_EU_Array.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Word_to_EU_Array.vi"/>
+			<Item Name="SEA_9811_count_Chn_Rx_words.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_count_Chn_Rx_words.vi"/>
+			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
+			<Item Name="SEA_9811_get_VS_conf.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_get_VS_conf.vi"/>
+			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
+			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/nirio_resource_hc.ctl"/>
+			<Item Name="niLvFpga_Close_cRIO-9082.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9082/niLvFpga_Close_cRIO-9082.vi"/>
+			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
+			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
+			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
+			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
+			<Item Name="niLvFpga_Run_cRIO-9082.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9082/niLvFpga_Run_cRIO-9082.vi"/>
+			<Item Name="niLvFpga_Reset_cRIO-9082.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9082/niLvFpga_Reset_cRIO-9082.vi"/>
+			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
+			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
+			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
+			<Item Name="niLvFpga_Open_cRIO-9082.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9082/niLvFpga_Open_cRIO-9082.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Release" Type="Source Distribution">
@@ -135,7 +157,7 @@
 				<Property Name="DestinationCount" Type="Int">4</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[0].Container.applySaveSettings" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{28574FCF-744D-4818-B50B-2E9BEEF76C0B}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{FD76CB9F-6C27-4C19-8E38-FB836E8BCA04}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].properties[1].type" Type="Str">Remove front panel</Property>
@@ -445,6 +467,7 @@
 				<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
 			</Item>
+			<Item Name="AIT 429 Custom Device.lvlib" Type="Library" URL="../AIT 429 Custom Device.lvlib"/>
 			<Item Name="ARINC 429 Shared.lvlib" Type="Library" URL="../Shared/ARINC 429 Shared.lvlib"/>
 			<Item Name="ARINC word cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/ARINC word cluster.ctl"/>
 			<Item Name="ARINC word.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/ARINC word.ctl"/>
@@ -453,10 +476,6 @@
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
-			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
-			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
-			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
 			<Item Name="owl429.dll" Type="Document" URL="owl429.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -477,6 +496,7 @@
 			<Item Name="SEA_9811_Clock_sync.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Clock_sync.vi"/>
 			<Item Name="SEA_9811_Close.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Close.vi"/>
 			<Item Name="SEA_9811_count_Chn_Rx_words.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_count_Chn_Rx_words.vi"/>
+			<Item Name="SEA_9811_get_VS_conf.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_get_VS_conf.vi"/>
 			<Item Name="SEA_9811_Init.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Init.vi"/>
 			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
 			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
@@ -602,8 +622,10 @@
 				<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
 			</Item>
-			<Item Name="9082_SEA_9811_9220_IOsim.lvbitx" Type="Document" URL="../SEA 9811 FPGA driver/FPGA Bitfiles/9082_SEA_9811_9220_IOsim.lvbitx"/>
+			<Item Name="AIT 429 Custom Device.lvlib" Type="Library" URL="../AIT 429 Custom Device.lvlib"/>
 			<Item Name="ARINC 429 Shared.lvlib" Type="Library" URL="../Shared/ARINC 429 Shared.lvlib"/>
+			<Item Name="ARINC word cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/ARINC word cluster.ctl"/>
+			<Item Name="ARINC word.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/ARINC word.ctl"/>
 			<Item Name="channel.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/channel.ctl"/>
 			<Item Name="FPGA ref.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/FPGA ref.ctl"/>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
@@ -619,16 +641,24 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="received word.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/received word.ctl"/>
+			<Item Name="SEA-9811_FPGA_9082__9862_9862_9811_9220.lvbitx" Type="Document" URL="../SEA 9811 FPGA driver/FPGA Bitfiles/SEA-9811_FPGA_9082__9862_9862_9811_9220.lvbitx"/>
 			<Item Name="SEA-9811_ReceiverAndTransmitter_RCR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RCR.ctl"/>
+			<Item Name="SEA-9811_ReceiverAndTransmitter_RSR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RSR.ctl"/>
 			<Item Name="SEA-9811_ReceiverAndTransmitter_TCR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_TCR.ctl"/>
 			<Item Name="SEA9811_RT_conf_cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/SEA9811_RT_conf_cluster.ctl"/>
 			<Item Name="SEA9811_RT_data_cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/SEA9811_RT_data_cluster.ctl"/>
+			<Item Name="SEA_9811_ARINCword2data.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_ARINCword2data.vi"/>
+			<Item Name="SEA_9811_Clock_sync.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Clock_sync.vi"/>
 			<Item Name="SEA_9811_Close.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Close.vi"/>
-			<Item Name="SEA_9811_count_Chn_Rx_words.vi" Type="VI" URL="../../../SEA 9811 FPGA driver/RT/SEA_9811_count_Chn_Rx_words.vi"/>
+			<Item Name="SEA_9811_count_Chn_Rx_words.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_count_Chn_Rx_words.vi"/>
+			<Item Name="SEA_9811_get_VS_conf.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_get_VS_conf.vi"/>
 			<Item Name="SEA_9811_Init.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Init.vi"/>
-			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../../../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
-			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../../../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
+			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
+			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
+			<Item Name="SEA_9811_reset_rx_word_counter.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_reset_rx_word_counter.vi"/>
+			<Item Name="SEA_9811_RT_FIFO_processor.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_RT_FIFO_processor.vi"/>
 			<Item Name="SEA_9811_Start.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Start.vi"/>
+			<Item Name="SEA_9811_Word_to_EU_Array.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Word_to_EU_Array.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Engine Release" Type="Source Distribution">
