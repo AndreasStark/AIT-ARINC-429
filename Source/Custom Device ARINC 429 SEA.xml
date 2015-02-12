@@ -517,6 +517,47 @@
 				<Type>To Common Doc Dir</Type>
 				<Path>Custom Devices\AIT 429\AIT 429 Configuration.llb\AIT 429 Label Page.vi</Path>
 			</Item2Launch>
+			<RunTimeMenu>
+				<MenuItem>
+					<GUID>0d1a6c65-4702-4ba2-a4fe-6d7cc3c2f7ba</GUID>
+					<Type>Action</Type>
+					<Name>
+						<eng>Add Timestamp Channel</eng>
+						<loc>Add Timestamp Channel</loc>
+					</Name>
+					<Item2Launch>
+						<Type>To Common Doc Dir</Type>
+						<Path>Custom Devices\AIT 429\AIT 429 Configuration.llb\ARINC 429 - Add Single TimeStamp Channel.vi</Path>
+					</Item2Launch>
+				</MenuItem>
+			</RunTimeMenu>
+			<ButtonList>
+				<Button>
+					<ID>NIVS_ARINC429_AddTimeStampChannel</ID>
+					<Glyph>
+						<Type>To Application Data Dir</Type>
+						<Path>System Explorer\Glyphs\NI-XNET Receive Time.png</Path>
+					</Glyph>
+					<Type>Action</Type>
+					<ReferencedGUID>0d1a6c65-4702-4ba2-a4fe-6d7cc3c2f7ba</ReferencedGUID>
+					<ButtonText>
+						<eng>Add Timestamp</eng>
+						<loc>Add Timestamp</loc>
+					</ButtonText>
+					<Caption>
+						<eng>Add Timestamp</eng>
+						<loc>Add Timestamp</loc>
+					</Caption>
+					<TipStrip>
+						<eng>Add timestamp channel for this label</eng>
+						<loc>Add timestamp channel for this label</loc>
+					</TipStrip>
+					<Documentation>
+						<eng />
+						<loc />
+					</Documentation>
+				</Button>
+			</ButtonList>
 		</Page>
 		<Page>
 			<Name>

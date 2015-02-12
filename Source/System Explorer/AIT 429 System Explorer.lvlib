@@ -34,6 +34,7 @@
 				<Item Name="AIT 429 Label Page.vi" Type="VI" URL="../Dynamically Called/Pages/AIT 429 Label Page.vi"/>
 				<Item Name="Status Section Page.vi" Type="VI" URL="../Dynamically Called/Pages/Status Section Page.vi"/>
 				<Item Name="AIT 429 Word Page.vi" Type="VI" URL="../Dynamically Called/Pages/AIT 429 Word Page.vi"/>
+				<Item Name="ARINC 429 SEA Main Page.vi" Type="VI" URL="../Dynamically Called/Pages/ARINC 429 SEA Main Page.vi"/>
 			</Item>
 			<Item Name="AIT 429 - Add All Label Bit Channels.vi" Type="VI" URL="../Dynamically Called/AIT 429 - Add All Label Bit Channels.vi"/>
 			<Item Name="AIT 429 - Add Channels.vi" Type="VI" URL="../Dynamically Called/AIT 429 - Add Channels.vi"/>
@@ -41,10 +42,22 @@
 			<Item Name="AIT 429 - Clear Database.vi" Type="VI" URL="../Dynamically Called/AIT 429 - Clear Database.vi"/>
 			<Item Name="AIT 429 - Load Database.vi" Type="VI" URL="../Dynamically Called/AIT 429 - Load Database.vi"/>
 			<Item Name="AIT 429 Initialization VI.vi" Type="VI" URL="../Dynamically Called/AIT 429 Initialization VI.vi"/>
+			<Item Name="ARINC 429 - Add Single TimeStamp Channel.vi" Type="VI" URL="../Dynamically Called/ARINC 429 - Add Single TimeStamp Channel.vi"/>
+			<Item Name="ARINC 429 - Add TimeStamp Channels.vi" Type="VI" URL="../Dynamically Called/ARINC 429 - Add TimeStamp Channels.vi"/>
 			<Item Name="ConditionallySerialiaze.vi" Type="VI" URL="../Dynamically Called/ConditionallySerialiaze.vi"/>
 			<Item Name="Database Refresh Options.vi" Type="VI" URL="../Dynamically Called/Database Refresh Options.vi"/>
 			<Item Name="EnableDisable - Right Click.vi" Type="VI" URL="../Dynamically Called/EnableDisable - Right Click.vi"/>
 			<Item Name="Main On Load Action VI.vi" Type="VI" URL="../Dynamically Called/Main On Load Action VI.vi"/>
+		</Item>
+		<Item Name="Select FPGA" Type="Folder">
+			<Property Name="NI.SortType" Type="Int">3</Property>
+			<Item Name="Select FPGA.vi" Type="VI" URL="../SubVIs/Select FPGA/Select FPGA.vi"/>
+			<Item Name="Bitfile Component Check.vi" Type="VI" URL="../SubVIs/Select FPGA/Bitfile Component Check.vi"/>
+			<Item Name="Get Available FPGA Components.vi" Type="VI" URL="../SubVIs/Select FPGA/Get Available FPGA Components.vi"/>
+			<Item Name="Get Bitfile Checksum.vi" Type="VI" URL="../SubVIs/Select FPGA/Get Bitfile Checksum.vi"/>
+			<Item Name="SEA_9811_Select_FPGA.vi" Type="VI" URL="../SubVIs/Select FPGA/SEA_9811_Select_FPGA.vi"/>
+			<Item Name="Get FPGA Dependent File.vi" Type="VI" URL="../SubVIs/Select FPGA/Get FPGA Dependent File.vi"/>
+			<Item Name="GetSDFPath.vi" Type="VI" URL="../SubVIs/Select FPGA/GetSDFPath.vi"/>
 		</Item>
 		<Item Name="SubVIs" Type="Folder">
 			<Item Name="Owl429 SP" Type="Folder">

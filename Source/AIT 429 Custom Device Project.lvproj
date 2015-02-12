@@ -68,10 +68,16 @@
 				<Item Name="Custom Device API.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device API/Custom Device API.lvlib"/>
 				<Item Name="Custom Device Utility Library.lvlib" Type="Library" URL="/&lt;vilib&gt;/NI Veristand/Custom Device Tools/Custom Device Utility Library/Custom Device Utility Library.lvlib"/>
 				<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
+				<Item Name="UnescapeChar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/UnescapeChar.vi"/>
+				<Item Name="LVFixedPointRepBitsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/fxp/LVFixedPointRepBitsTypeDef.ctl"/>
+				<Item Name="LVFixedPointRepRangeTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/fxp/LVFixedPointRepRangeTypeDef.ctl"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
 				<Item Name="Owl429.lvlib" Type="Library" URL="/&lt;userlib&gt;/ARINC-429/Owl429.lvlib"/>
 				<Item Name="FPGA Timekeeper.lvlib" Type="Library" URL="/&lt;userlib&gt;/FPGA Timekeeper 1.1b0/FPGA Timekeeper.lvlib"/>
+				<Item Name="FPGA Interface Base.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/_FPGA Interface Advanced Tools/FPGA Interface Base/FPGA Interface Base.lvclass"/>
+				<Item Name="FPGA Bitfile Utility.lvlib" Type="Library" URL="/&lt;userlib&gt;/_FPGA Interface Advanced Tools/FPGA Bitfile Utility/FPGA Bitfile Utility.lvlib"/>
+				<Item Name="FPGA Interface Wrapper.lvlib" Type="Library" URL="/&lt;userlib&gt;/_FPGA Interface Advanced Tools/FPGA Interface Wrapper/FPGA Interface Wrapper.lvlib"/>
 			</Item>
 			<Item Name="instr.lib" Type="Folder">
 				<Item Name="AIT 429.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIT 429/AIT 429.lvlib"/>
@@ -102,15 +108,11 @@
 			<Item Name="SEA-9811_ReceiverAndTransmitter_RCR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RCR.ctl"/>
 			<Item Name="SEA-9811_ReceiverAndTransmitter_TCR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_TCR.ctl"/>
 			<Item Name="SEA_9811_Init.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Init.vi"/>
-			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
 			<Item Name="SEA_9811_Start.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Start.vi"/>
 			<Item Name="SEA_9811_Close.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Close.vi"/>
 			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
 			<Item Name="SEA-9811_ReceiverAndTransmitter_RSR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RSR.ctl"/>
 			<Item Name="SEA_9811_Clock_sync.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Clock_sync.vi"/>
-			<Item Name="SEA-9811_FPGA_9082__9862_9862_9811_9220.lvbitx" Type="Document" URL="../SEA 9811 FPGA driver/FPGA Bitfiles/SEA-9811_FPGA_9082__9862_9862_9811_9220.lvbitx"/>
 			<Item Name="SEA_9811_RT_FIFO_processor.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_RT_FIFO_processor.vi"/>
 			<Item Name="SEA_9811_reset_rx_word_counter.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_reset_rx_word_counter.vi"/>
 			<Item Name="SEA_9811_ARINCword2data.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_ARINCword2data.vi"/>
@@ -120,19 +122,46 @@
 			<Item Name="SEA_9811_count_Chn_Rx_words.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_count_Chn_Rx_words.vi"/>
 			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
 			<Item Name="SEA_9811_get_VS_conf.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_get_VS_conf.vi"/>
-			<Item Name="XDNodeRunTimeDep.lvlib" Type="Library" URL="/&lt;vilib&gt;/Platform/TimedLoop/XDataNode/XDNodeRunTimeDep.lvlib"/>
-			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/nirio_resource_hc.ctl"/>
-			<Item Name="niLvFpga_Close_cRIO-9082.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9082/niLvFpga_Close_cRIO-9082.vi"/>
-			<Item Name="niLvFpgaFormatErrorSource.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaFormatErrorSource.vi"/>
-			<Item Name="niLvFpgaWhatHappensToTopLevelVI.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaWhatHappensToTopLevelVI.ctl"/>
-			<Item Name="niFpgaNodeNameForErrorReporting.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/interface/common/niFpgaNodeNameForErrorReporting.ctl"/>
-			<Item Name="niLvFpgaAdjustHostInterfaceError.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaAdjustHostInterfaceError.vi"/>
-			<Item Name="niLvFpga_Run_cRIO-9082.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9082/niLvFpga_Run_cRIO-9082.vi"/>
-			<Item Name="niLvFpga_Reset_cRIO-9082.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9082/niLvFpga_Reset_cRIO-9082.vi"/>
-			<Item Name="niLvFpgaErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaErrorClusterFromErrorCode.vi"/>
-			<Item Name="nirviErrorClusterFromErrorCode.vi" Type="VI" URL="/&lt;vilib&gt;/RVI Host/nirviSupport.llb/nirviErrorClusterFromErrorCode.vi"/>
-			<Item Name="nirviWhatTheDeviceIsDoing.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/nirviWhatTheDeviceIsDoing.ctl"/>
-			<Item Name="niLvFpga_Open_cRIO-9082.vi" Type="VI" URL="/&lt;vilib&gt;/FPGAPlugInAG/cRIO-9082/niLvFpga_Open_cRIO-9082.vi"/>
+			<Item Name="SEA9811_FPGA_FP_Addresses.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/SEA9811_FPGA_FP_Addresses.ctl"/>
+			<Item Name="NiFpga.dll" Type="Document" URL="NiFpga.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="SEA_9811_InitDynamicFPGA.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_InitDynamicFPGA.vi"/>
+			<Item Name="SEA_9811_send_config_to_module.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_send_config_to_module.vi"/>
+			<Item Name="niFpgaDataTypeControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaDataTypeControl.ctl"/>
+			<Item Name="nirviXML_TagType.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_TagType.ctl"/>
+			<Item Name="nirviXML_FindTag.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_FindTag.vi"/>
+			<Item Name="nirviXML_GetValue_String.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_String.vi"/>
+			<Item Name="nirviXML_GetValue_String_Escaped.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_String_Escaped.vi"/>
+			<Item Name="niFpgaGenCallStack.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niFpgaGenCallStack.vi"/>
+			<Item Name="nirviFillInErrorInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviFillInErrorInfo.vi"/>
+			<Item Name="niLvFpgaReportInternalErrorWithAdditionalInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaReportInternalErrorWithAdditionalInfo.vi"/>
+			<Item Name="niFpgaDecodeBase64.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/niFpgaDecodeBase64.vi"/>
+			<Item Name="nirviXML_GetValue_ArrayU32base64.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_ArrayU32base64.vi"/>
+			<Item Name="nirviXML_GetValue_ArrayU8base64.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_ArrayU8base64.vi"/>
+			<Item Name="nirviXML_GetValue_ArrayU8hex.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_ArrayU8hex.vi"/>
+			<Item Name="nirviXML_GetValue_I32.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_I32.vi"/>
+			<Item Name="nirviXML_GetValue_Double.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_Double.vi"/>
+			<Item Name="nirviXML_GetValue_Boolean.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_Boolean.vi"/>
+			<Item Name="nirviXML_GetValue_U32.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_U32.vi"/>
+			<Item Name="nirviXML_GetValue.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue.vi"/>
+			<Item Name="nirviTypdefDescription.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviTypdefDescription.ctl"/>
+			<Item Name="nirviClusterElementControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviClusterElementControl.ctl"/>
+			<Item Name="nirviSubControlStructure.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviSubControlStructure.ctl"/>
+			<Item Name="niFpgaReadBitfileXml_VIRegisterMapSubControls.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/niFpgaReadBitfileXml_VIRegisterMapSubControls.vi"/>
+			<Item Name="nirviMechanicalAction.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviMechanicalAction.ctl"/>
+			<Item Name="nirviControlStructure.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviControlStructure.ctl"/>
+			<Item Name="niFpgaReadBitfileXml_VIRegisterMap.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/niFpgaReadBitfileXml_VIRegisterMap.vi"/>
+			<Item Name="niFpgaGetSinkWriteWindowName.vi" Type="VI" URL="/&lt;resource&gt;/RVI/CommunicationInterface/Utilities/niFpgaGetSinkWriteWindowName.vi"/>
+			<Item Name="niFpgaCreateFxpVariantTypeFromAttributes.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/Variants/niFpgaCreateFxpVariantTypeFromAttributes.vi"/>
+			<Item Name="nirviXML_GetValueWithName.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValueWithName.vi"/>
+			<Item Name="nirviXML_GetNameAttribute.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetNameAttribute.vi"/>
+			<Item Name="nirviXML_Element.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_Element.ctl"/>
+			<Item Name="nirviXML_GetChildren.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetChildren.vi"/>
+			<Item Name="niFpgaDmaChannelVisibilityFilter.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/Host Interface/DMA/public/niFpgaDmaChannelVisibilityFilter.ctl"/>
+			<Item Name="niFpgaDmaChannelImplementation.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/Core/ModuleGeneration/CommunicationInterfaceUtility/niFpgaDmaChannelImplementation.ctl"/>
+			<Item Name="Fifo_DMA_Config.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Types/Fifo_DMA_Config.ctl"/>
+			<Item Name="niLvFpgaGetDmaChannelInfoFromXML.vi" Type="VI" URL="/&lt;resource&gt;/RVI/compilationResultUtilities/niLvFpgaGetDmaChannelInfoFromXML.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Release" Type="Source Distribution">
@@ -457,6 +486,9 @@
 				<Item Name="AIT 429.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIT 429/AIT 429.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
+				<Item Name="FPGA Bitfile Utility.lvlib" Type="Library" URL="/&lt;userlib&gt;/_FPGA Interface Advanced Tools/FPGA Bitfile Utility/FPGA Bitfile Utility.lvlib"/>
+				<Item Name="FPGA Interface Base.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/_FPGA Interface Advanced Tools/FPGA Interface Base/FPGA Interface Base.lvclass"/>
+				<Item Name="FPGA Interface Wrapper.lvlib" Type="Library" URL="/&lt;userlib&gt;/_FPGA Interface Advanced Tools/FPGA Interface Wrapper/FPGA Interface Wrapper.lvlib"/>
 				<Item Name="FPGA Timekeeper.lvlib" Type="Library" URL="/&lt;userlib&gt;/FPGA Timekeeper 1.1b0/FPGA Timekeeper.lvlib"/>
 				<Item Name="Owl429.lvlib" Type="Library" URL="/&lt;userlib&gt;/ARINC-429/Owl429.lvlib"/>
 			</Item>
@@ -466,16 +498,53 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
+				<Item Name="LVFixedPointRepBitsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/fxp/LVFixedPointRepBitsTypeDef.ctl"/>
+				<Item Name="LVFixedPointRepRangeTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/fxp/LVFixedPointRepRangeTypeDef.ctl"/>
+				<Item Name="UnescapeChar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/UnescapeChar.vi"/>
+				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 			</Item>
-			<Item Name="AIT 429 Custom Device.lvlib" Type="Library" URL="../AIT 429 Custom Device.lvlib"/>
 			<Item Name="ARINC 429 Shared.lvlib" Type="Library" URL="../Shared/ARINC 429 Shared.lvlib"/>
 			<Item Name="ARINC word cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/ARINC word cluster.ctl"/>
 			<Item Name="ARINC word.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/ARINC word.ctl"/>
 			<Item Name="channel.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/channel.ctl"/>
+			<Item Name="Fifo_DMA_Config.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Types/Fifo_DMA_Config.ctl"/>
 			<Item Name="FPGA ref.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/FPGA ref.ctl"/>
-			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+			<Item Name="NiFpga.dll" Type="Document" URL="NiFpga.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="niFpgaCreateFxpVariantTypeFromAttributes.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/Variants/niFpgaCreateFxpVariantTypeFromAttributes.vi"/>
+			<Item Name="niFpgaDataTypeControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaDataTypeControl.ctl"/>
+			<Item Name="niFpgaDecodeBase64.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/niFpgaDecodeBase64.vi"/>
+			<Item Name="niFpgaDmaChannelImplementation.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/Core/ModuleGeneration/CommunicationInterfaceUtility/niFpgaDmaChannelImplementation.ctl"/>
+			<Item Name="niFpgaDmaChannelVisibilityFilter.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/Host Interface/DMA/public/niFpgaDmaChannelVisibilityFilter.ctl"/>
+			<Item Name="niFpgaGenCallStack.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niFpgaGenCallStack.vi"/>
+			<Item Name="niFpgaGetSinkWriteWindowName.vi" Type="VI" URL="/&lt;resource&gt;/RVI/CommunicationInterface/Utilities/niFpgaGetSinkWriteWindowName.vi"/>
+			<Item Name="niFpgaReadBitfileXml_VIRegisterMap.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/niFpgaReadBitfileXml_VIRegisterMap.vi"/>
+			<Item Name="niFpgaReadBitfileXml_VIRegisterMapSubControls.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/niFpgaReadBitfileXml_VIRegisterMapSubControls.vi"/>
+			<Item Name="niLvFpgaGetDmaChannelInfoFromXML.vi" Type="VI" URL="/&lt;resource&gt;/RVI/compilationResultUtilities/niLvFpgaGetDmaChannelInfoFromXML.vi"/>
+			<Item Name="niLvFpgaReportInternalErrorWithAdditionalInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaReportInternalErrorWithAdditionalInfo.vi"/>
+			<Item Name="nirviClusterElementControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviClusterElementControl.ctl"/>
+			<Item Name="nirviControlStructure.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviControlStructure.ctl"/>
+			<Item Name="nirviFillInErrorInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviFillInErrorInfo.vi"/>
+			<Item Name="nirviMechanicalAction.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviMechanicalAction.ctl"/>
+			<Item Name="nirviSubControlStructure.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviSubControlStructure.ctl"/>
+			<Item Name="nirviTypdefDescription.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviTypdefDescription.ctl"/>
+			<Item Name="nirviXML_Element.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_Element.ctl"/>
+			<Item Name="nirviXML_FindTag.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_FindTag.vi"/>
+			<Item Name="nirviXML_GetChildren.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetChildren.vi"/>
+			<Item Name="nirviXML_GetNameAttribute.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetNameAttribute.vi"/>
+			<Item Name="nirviXML_GetValue.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue.vi"/>
+			<Item Name="nirviXML_GetValue_ArrayU8base64.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_ArrayU8base64.vi"/>
+			<Item Name="nirviXML_GetValue_ArrayU8hex.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_ArrayU8hex.vi"/>
+			<Item Name="nirviXML_GetValue_ArrayU32base64.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_ArrayU32base64.vi"/>
+			<Item Name="nirviXML_GetValue_Boolean.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_Boolean.vi"/>
+			<Item Name="nirviXML_GetValue_Double.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_Double.vi"/>
+			<Item Name="nirviXML_GetValue_I32.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_I32.vi"/>
+			<Item Name="nirviXML_GetValue_String.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_String.vi"/>
+			<Item Name="nirviXML_GetValue_String_Escaped.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_String_Escaped.vi"/>
+			<Item Name="nirviXML_GetValue_U32.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_U32.vi"/>
+			<Item Name="nirviXML_GetValueWithName.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValueWithName.vi"/>
+			<Item Name="nirviXML_TagType.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_TagType.ctl"/>
 			<Item Name="owl429.dll" Type="Document" URL="owl429.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -486,10 +555,10 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="received word.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/received word.ctl"/>
-			<Item Name="SEA-9811_FPGA_9082__9862_9862_9811_9220.lvbitx" Type="Document" URL="../SEA 9811 FPGA driver/FPGA Bitfiles/SEA-9811_FPGA_9082__9862_9862_9811_9220.lvbitx"/>
 			<Item Name="SEA-9811_ReceiverAndTransmitter_RCR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RCR.ctl"/>
 			<Item Name="SEA-9811_ReceiverAndTransmitter_RSR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RSR.ctl"/>
 			<Item Name="SEA-9811_ReceiverAndTransmitter_TCR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_TCR.ctl"/>
+			<Item Name="SEA9811_FPGA_FP_Addresses.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/SEA9811_FPGA_FP_Addresses.ctl"/>
 			<Item Name="SEA9811_RT_conf_cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/SEA9811_RT_conf_cluster.ctl"/>
 			<Item Name="SEA9811_RT_data_cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/SEA9811_RT_data_cluster.ctl"/>
 			<Item Name="SEA_9811_ARINCword2data.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_ARINCword2data.vi"/>
@@ -498,10 +567,12 @@
 			<Item Name="SEA_9811_count_Chn_Rx_words.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_count_Chn_Rx_words.vi"/>
 			<Item Name="SEA_9811_get_VS_conf.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_get_VS_conf.vi"/>
 			<Item Name="SEA_9811_Init.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Init.vi"/>
+			<Item Name="SEA_9811_InitDynamicFPGA.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_InitDynamicFPGA.vi"/>
 			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
 			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
 			<Item Name="SEA_9811_reset_rx_word_counter.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_reset_rx_word_counter.vi"/>
 			<Item Name="SEA_9811_RT_FIFO_processor.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_RT_FIFO_processor.vi"/>
+			<Item Name="SEA_9811_send_config_to_module.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_send_config_to_module.vi"/>
 			<Item Name="SEA_9811_Start.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Start.vi"/>
 			<Item Name="SEA_9811_Word_to_EU_Array.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Word_to_EU_Array.vi"/>
 		</Item>
@@ -612,6 +683,9 @@
 				<Item Name="AIT 429.lvlib" Type="Library" URL="/&lt;instrlib&gt;/AIT 429/AIT 429.lvlib"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
+				<Item Name="FPGA Bitfile Utility.lvlib" Type="Library" URL="/&lt;userlib&gt;/_FPGA Interface Advanced Tools/FPGA Bitfile Utility/FPGA Bitfile Utility.lvlib"/>
+				<Item Name="FPGA Interface Base.lvclass" Type="LVClass" URL="/&lt;userlib&gt;/_FPGA Interface Advanced Tools/FPGA Interface Base/FPGA Interface Base.lvclass"/>
+				<Item Name="FPGA Interface Wrapper.lvlib" Type="Library" URL="/&lt;userlib&gt;/_FPGA Interface Advanced Tools/FPGA Interface Wrapper/FPGA Interface Wrapper.lvlib"/>
 				<Item Name="FPGA Timekeeper.lvlib" Type="Library" URL="/&lt;userlib&gt;/FPGA Timekeeper 1.1b0/FPGA Timekeeper.lvlib"/>
 				<Item Name="Owl429.lvlib" Type="Library" URL="/&lt;userlib&gt;/ARINC-429/Owl429.lvlib"/>
 			</Item>
@@ -621,16 +695,53 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="FxpSim.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/FXPMathLib/sim/FxpSim.dll"/>
 				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi"/>
+				<Item Name="LVFixedPointRepBitsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/fxp/LVFixedPointRepBitsTypeDef.ctl"/>
+				<Item Name="LVFixedPointRepRangeTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/fxp/LVFixedPointRepRangeTypeDef.ctl"/>
+				<Item Name="UnescapeChar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/xml.llb/UnescapeChar.vi"/>
+				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 			</Item>
-			<Item Name="AIT 429 Custom Device.lvlib" Type="Library" URL="../AIT 429 Custom Device.lvlib"/>
 			<Item Name="ARINC 429 Shared.lvlib" Type="Library" URL="../Shared/ARINC 429 Shared.lvlib"/>
 			<Item Name="ARINC word cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/ARINC word cluster.ctl"/>
 			<Item Name="ARINC word.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/ARINC word.ctl"/>
 			<Item Name="channel.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/channel.ctl"/>
+			<Item Name="Fifo_DMA_Config.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Types/Fifo_DMA_Config.ctl"/>
 			<Item Name="FPGA ref.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/FPGA ref.ctl"/>
-			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+			<Item Name="NiFpga.dll" Type="Document" URL="NiFpga.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="niFpgaCreateFxpVariantTypeFromAttributes.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/Variants/niFpgaCreateFxpVariantTypeFromAttributes.vi"/>
+			<Item Name="niFpgaDataTypeControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaDataTypeControl.ctl"/>
+			<Item Name="niFpgaDecodeBase64.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/niFpgaDecodeBase64.vi"/>
+			<Item Name="niFpgaDmaChannelImplementation.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/Core/ModuleGeneration/CommunicationInterfaceUtility/niFpgaDmaChannelImplementation.ctl"/>
+			<Item Name="niFpgaDmaChannelVisibilityFilter.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/ClientSDK/Host Interface/DMA/public/niFpgaDmaChannelVisibilityFilter.ctl"/>
+			<Item Name="niFpgaGenCallStack.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niFpgaGenCallStack.vi"/>
+			<Item Name="niFpgaGetSinkWriteWindowName.vi" Type="VI" URL="/&lt;resource&gt;/RVI/CommunicationInterface/Utilities/niFpgaGetSinkWriteWindowName.vi"/>
+			<Item Name="niFpgaReadBitfileXml_VIRegisterMap.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/niFpgaReadBitfileXml_VIRegisterMap.vi"/>
+			<Item Name="niFpgaReadBitfileXml_VIRegisterMapSubControls.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/niFpgaReadBitfileXml_VIRegisterMapSubControls.vi"/>
+			<Item Name="niLvFpgaGetDmaChannelInfoFromXML.vi" Type="VI" URL="/&lt;resource&gt;/RVI/compilationResultUtilities/niLvFpgaGetDmaChannelInfoFromXML.vi"/>
+			<Item Name="niLvFpgaReportInternalErrorWithAdditionalInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaReportInternalErrorWithAdditionalInfo.vi"/>
+			<Item Name="nirviClusterElementControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviClusterElementControl.ctl"/>
+			<Item Name="nirviControlStructure.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviControlStructure.ctl"/>
+			<Item Name="nirviFillInErrorInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviFillInErrorInfo.vi"/>
+			<Item Name="nirviMechanicalAction.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviMechanicalAction.ctl"/>
+			<Item Name="nirviSubControlStructure.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviSubControlStructure.ctl"/>
+			<Item Name="nirviTypdefDescription.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviTypdefDescription.ctl"/>
+			<Item Name="nirviXML_Element.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_Element.ctl"/>
+			<Item Name="nirviXML_FindTag.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_FindTag.vi"/>
+			<Item Name="nirviXML_GetChildren.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetChildren.vi"/>
+			<Item Name="nirviXML_GetNameAttribute.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetNameAttribute.vi"/>
+			<Item Name="nirviXML_GetValue.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue.vi"/>
+			<Item Name="nirviXML_GetValue_ArrayU8base64.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_ArrayU8base64.vi"/>
+			<Item Name="nirviXML_GetValue_ArrayU8hex.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_ArrayU8hex.vi"/>
+			<Item Name="nirviXML_GetValue_ArrayU32base64.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_ArrayU32base64.vi"/>
+			<Item Name="nirviXML_GetValue_Boolean.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_Boolean.vi"/>
+			<Item Name="nirviXML_GetValue_Double.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_Double.vi"/>
+			<Item Name="nirviXML_GetValue_I32.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_I32.vi"/>
+			<Item Name="nirviXML_GetValue_String.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_String.vi"/>
+			<Item Name="nirviXML_GetValue_String_Escaped.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_String_Escaped.vi"/>
+			<Item Name="nirviXML_GetValue_U32.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValue_U32.vi"/>
+			<Item Name="nirviXML_GetValueWithName.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValueWithName.vi"/>
+			<Item Name="nirviXML_TagType.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_TagType.ctl"/>
 			<Item Name="owl429.dll" Type="Document" URL="owl429.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
@@ -641,10 +752,10 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="received word.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/received word.ctl"/>
-			<Item Name="SEA-9811_FPGA_9082__9862_9862_9811_9220.lvbitx" Type="Document" URL="../SEA 9811 FPGA driver/FPGA Bitfiles/SEA-9811_FPGA_9082__9862_9862_9811_9220.lvbitx"/>
 			<Item Name="SEA-9811_ReceiverAndTransmitter_RCR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RCR.ctl"/>
 			<Item Name="SEA-9811_ReceiverAndTransmitter_RSR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_RSR.ctl"/>
 			<Item Name="SEA-9811_ReceiverAndTransmitter_TCR.ctl" Type="VI" URL="../SEA 9811 FPGA driver/FPGA/SEA-9811_ReceiverAndTransmitter/SubVIs/SEA-9811_ReceiverAndTransmitter_TCR.ctl"/>
+			<Item Name="SEA9811_FPGA_FP_Addresses.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/SEA9811_FPGA_FP_Addresses.ctl"/>
 			<Item Name="SEA9811_RT_conf_cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/SEA9811_RT_conf_cluster.ctl"/>
 			<Item Name="SEA9811_RT_data_cluster.ctl" Type="VI" URL="../SEA 9811 FPGA driver/RT/Typdefs/SEA9811_RT_data_cluster.ctl"/>
 			<Item Name="SEA_9811_ARINCword2data.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_ARINCword2data.vi"/>
@@ -653,10 +764,12 @@
 			<Item Name="SEA_9811_count_Chn_Rx_words.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_count_Chn_Rx_words.vi"/>
 			<Item Name="SEA_9811_get_VS_conf.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_get_VS_conf.vi"/>
 			<Item Name="SEA_9811_Init.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Init.vi"/>
+			<Item Name="SEA_9811_InitDynamicFPGA.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_InitDynamicFPGA.vi"/>
 			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
 			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
 			<Item Name="SEA_9811_reset_rx_word_counter.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_reset_rx_word_counter.vi"/>
 			<Item Name="SEA_9811_RT_FIFO_processor.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_RT_FIFO_processor.vi"/>
+			<Item Name="SEA_9811_send_config_to_module.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_send_config_to_module.vi"/>
 			<Item Name="SEA_9811_Start.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Start.vi"/>
 			<Item Name="SEA_9811_Word_to_EU_Array.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Word_to_EU_Array.vi"/>
 		</Item>
