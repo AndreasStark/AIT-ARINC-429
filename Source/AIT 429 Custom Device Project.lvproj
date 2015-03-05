@@ -128,6 +128,7 @@
 			</Item>
 			<Item Name="SEA_9811_InitDynamicFPGA.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_InitDynamicFPGA.vi"/>
 			<Item Name="SEA_9811_send_config_to_module.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_send_config_to_module.vi"/>
+			<Item Name="Main Page Init SEA FPGA.vi" Type="VI" URL="../System Explorer/SubVIs/Main Page Init SEA FPGA.vi"/>
 			<Item Name="niFpgaDataTypeControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaDataTypeControl.ctl"/>
 			<Item Name="nirviXML_TagType.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_TagType.ctl"/>
 			<Item Name="nirviXML_FindTag.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_FindTag.vi"/>
