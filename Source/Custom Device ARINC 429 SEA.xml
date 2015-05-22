@@ -5,7 +5,7 @@
 		<eng>ARINC 429 SEA</eng>
 		<loc>ARINC 429 SEA</loc>
 	</AddMenu>
-	<Version>3.0.0</Version>
+	<Version>3.0.1</Version>
 	<Type>Inline HW Interface</Type>
 	<MaxOccurrence>2474</MaxOccurrence>
 	<MainPageGUID>b6bddf69-436f-497a-b1b5-8a86a0639f81</MainPageGUID>

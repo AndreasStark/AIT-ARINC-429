@@ -128,7 +128,7 @@
 			</Item>
 			<Item Name="SEA_9811_InitDynamicFPGA.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_InitDynamicFPGA.vi"/>
 			<Item Name="SEA_9811_send_config_to_module.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_send_config_to_module.vi"/>
-			<Item Name="Main Page Init SEA FPGA.vi" Type="VI" URL="../System Explorer/SubVIs/Main Page Init SEA FPGA.vi"/>
+			<Item Name="SEA_9811_VS_Write.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_VS_Write.vi"/>
 			<Item Name="niFpgaDataTypeControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaDataTypeControl.ctl"/>
 			<Item Name="nirviXML_TagType.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_TagType.ctl"/>
 			<Item Name="nirviXML_FindTag.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_FindTag.vi"/>
@@ -154,8 +154,8 @@
 			<Item Name="nirviControlStructure.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviControlStructure.ctl"/>
 			<Item Name="niFpgaReadBitfileXml_VIRegisterMap.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/niFpgaReadBitfileXml_VIRegisterMap.vi"/>
 			<Item Name="niFpgaGetSinkWriteWindowName.vi" Type="VI" URL="/&lt;resource&gt;/RVI/CommunicationInterface/Utilities/niFpgaGetSinkWriteWindowName.vi"/>
-			<Item Name="niFpgaCreateFxpVariantTypeFromAttributes.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/Variants/niFpgaCreateFxpVariantTypeFromAttributes.vi"/>
 			<Item Name="nirviXML_GetValueWithName.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetValueWithName.vi"/>
+			<Item Name="niFpgaCreateFxpVariantTypeFromAttributes.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/Variants/niFpgaCreateFxpVariantTypeFromAttributes.vi"/>
 			<Item Name="nirviXML_GetNameAttribute.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetNameAttribute.vi"/>
 			<Item Name="nirviXML_Element.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_Element.ctl"/>
 			<Item Name="nirviXML_GetChildren.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_GetChildren.vi"/>
@@ -524,6 +524,7 @@
 			<Item Name="niFpgaReadBitfileXml_VIRegisterMapSubControls.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/niFpgaReadBitfileXml_VIRegisterMapSubControls.vi"/>
 			<Item Name="niLvFpgaGetDmaChannelInfoFromXML.vi" Type="VI" URL="/&lt;resource&gt;/RVI/compilationResultUtilities/niLvFpgaGetDmaChannelInfoFromXML.vi"/>
 			<Item Name="niLvFpgaReportInternalErrorWithAdditionalInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/niLvFpgaReportInternalErrorWithAdditionalInfo.vi"/>
+			<Item Name="nirio_resource_hc.ctl" Type="VI" URL="/&lt;vilib&gt;/userdefined/High Color/nirio_resource_hc.ctl"/>
 			<Item Name="nirviClusterElementControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviClusterElementControl.ctl"/>
 			<Item Name="nirviControlStructure.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Bitfile/nirviControlStructure.ctl"/>
 			<Item Name="nirviFillInErrorInfo.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/errors/nirviFillInErrorInfo.vi"/>
@@ -575,6 +576,7 @@
 			<Item Name="SEA_9811_RT_FIFO_processor.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_RT_FIFO_processor.vi"/>
 			<Item Name="SEA_9811_send_config_to_module.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_send_config_to_module.vi"/>
 			<Item Name="SEA_9811_Start.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Start.vi"/>
+			<Item Name="SEA_9811_VS_Write.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_VS_Write.vi"/>
 			<Item Name="SEA_9811_Word_to_EU_Array.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Word_to_EU_Array.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -772,6 +774,7 @@
 			<Item Name="SEA_9811_RT_FIFO_processor.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_RT_FIFO_processor.vi"/>
 			<Item Name="SEA_9811_send_config_to_module.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_send_config_to_module.vi"/>
 			<Item Name="SEA_9811_Start.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Start.vi"/>
+			<Item Name="SEA_9811_VS_Write.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_VS_Write.vi"/>
 			<Item Name="SEA_9811_Word_to_EU_Array.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Word_to_EU_Array.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">

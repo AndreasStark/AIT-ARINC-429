@@ -101,8 +101,10 @@
 			<Item Name="Create Sysdef Tree from DB Channel Clusters.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree from DB Channel Clusters.vi"/>
 			<Item Name="Create Sysdef Tree Labels.vi" Type="VI" URL="../SubVIs/Create Sysdef Tree Labels.vi"/>
 			<Item Name="DB Import Action - Create Chans.vi" Type="VI" URL="../SubVIs/DB Import Action - Create Chans.vi"/>
+			<Item Name="Main Page Init SEA FPGA.vi" Type="VI" URL="../SubVIs/Main Page Init SEA FPGA.vi"/>
 			<Item Name="PtByPt Counter.vi" Type="VI" URL="../SubVIs/PtByPt Counter.vi"/>
 			<Item Name="Resolve DB Bin File Name and Path.vi" Type="VI" URL="../SubVIs/Resolve DB Bin File Name and Path.vi"/>
+			<Item Name="SEA_9811_Create_Send_Channels.vi" Type="VI" URL="../SubVIs/SEA_9811_Create_Send_Channels.vi"/>
 			<Item Name="Setup Dependencies.vi" Type="VI" URL="../SubVIs/Setup Dependencies.vi"/>
 			<Item Name="Update Deploying Dialog Box.vi" Type="VI" URL="../SubVIs/Update Deploying Dialog Box.vi"/>
 		</Item>
