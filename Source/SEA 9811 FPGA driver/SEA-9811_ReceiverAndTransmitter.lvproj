@@ -114,6 +114,8 @@ Copyright (c) 2013 S.E.A. Datentechnik GmbH, Germany</Property>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="ARINC word cluster.ctl" Type="VI" URL="../RT/Typdefs/ARINC word cluster.ctl"/>
 			<Item Name="ARINC word.ctl" Type="VI" URL="../RT/Typdefs/ARINC word.ctl"/>
+			<Item Name="channel.ctl" Type="VI" URL="../RT/Typdefs/channel.ctl"/>
+			<Item Name="received word.ctl" Type="VI" URL="../RT/Typdefs/received word.ctl"/>
 			<Item Name="SEA_9811_ARINCdata2word.vi" Type="VI" URL="../RT/SEA_9811_ARINCdata2word.vi"/>
 			<Item Name="SEA_9811_ARINCword2data.vi" Type="VI" URL="../RT/SEA_9811_ARINCword2data.vi"/>
 		</Item>
@@ -942,6 +944,7 @@ Timeout 60
 			<Item Name="NiFpga.dll" Type="Document" URL="NiFpga.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="channel data analyzer.vi" Type="VI" URL="../UnitTests/channel data analyzer.vi"/>
 			<Item Name="niFpgaDataTypeControl.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/DataTransferAndStorage/Container/Common/niFpgaDataTypeControl.ctl"/>
 			<Item Name="nirviXML_TagType.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_TagType.ctl"/>
 			<Item Name="nirviXML_FindTag.vi" Type="VI" URL="/&lt;vilib&gt;/rvi/Utilities/XML/nirviXML_FindTag.vi"/>
@@ -1704,6 +1707,7 @@ Timeout 60
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 			</Item>
 			<Item Name="ARINC 429 Shared.lvlib" Type="Library" URL="../../Shared/ARINC 429 Shared.lvlib"/>
+			<Item Name="channel data analyzer.vi" Type="VI" URL="../UnitTests/channel data analyzer.vi"/>
 			<Item Name="Fifo_DMA_Config.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Types/Fifo_DMA_Config.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpga.dll" Type="Document" URL="NiFpga.dll">
@@ -2618,6 +2622,7 @@ Timeout 60
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 			</Item>
 			<Item Name="ARINC 429 Shared.lvlib" Type="Library" URL="../../Shared/ARINC 429 Shared.lvlib"/>
+			<Item Name="channel data analyzer.vi" Type="VI" URL="../UnitTests/channel data analyzer.vi"/>
 			<Item Name="Fifo_DMA_Config.ctl" Type="VI" URL="/&lt;vilib&gt;/rvi/FIFO/Fifo_Types/Fifo_DMA_Config.ctl"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="NiFpga.dll" Type="Document" URL="NiFpga.dll">
@@ -2681,7 +2686,6 @@ Timeout 60
 		<Property Name="target.FPProtocolGlobals_ControlTimeLimit" Type="Int">300</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Port" Type="Int">80</Property>
 		<Property Name="target.getDefault-&gt;WebServer.Timeout" Type="Int">60</Property>
-		<Property Name="target.IOScan.Enabled" Type="Bool">true</Property>
 		<Property Name="target.IOScan.Faults" Type="Str"></Property>
 		<Property Name="target.IOScan.NetVarPeriod" Type="UInt">100</Property>
 		<Property Name="target.IOScan.NetWatchdogEnabled" Type="Bool">false</Property>

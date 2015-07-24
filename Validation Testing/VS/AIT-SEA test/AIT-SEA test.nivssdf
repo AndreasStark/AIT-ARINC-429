@@ -10,7 +10,7 @@
 				<String>AIT-SEA test</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.19</String>
+				<String>1.0.0.22</String>
 			</Property>
 			<Property Name="Creator">
 				<String>Andreas Stark</String>
@@ -1861,7 +1861,7 @@
 						<I32>1000</I32>
 					</Property>
 					<Property Name="Deployment Group">
-						<I32>0</I32>
+						<I32>1</I32>
 					</Property>
 					<Property Name="Control Rate">
 						<Double>1</Double>
