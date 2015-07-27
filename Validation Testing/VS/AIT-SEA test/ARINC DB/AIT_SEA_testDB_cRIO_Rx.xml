@@ -35,6 +35,7 @@
                 <label labelId="00">
                     <buffer name="2_Rx0" depth="1" parityEnabled="true"/>
 					<!-- <parameter name="2_Rx0_ALL" startBit="0" numberBits="32" scaleFactor="1" scaleOffset="0" signed="False" /> -->
+					<!-- <parameter name="2_Rx0_Data" startBit="10" numberBits="19" scaleFactor="1" scaleOffset="0" signed="False" /> -->
                 </label>
                 <label labelId="01">
                     <buffer name="2_Rx1" depth="1" parityEnabled="true"/>

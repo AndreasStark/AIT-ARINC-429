@@ -10,7 +10,7 @@
 				<String>AIT-SEA test</String>
 			</Property>
 			<Property Name="Version">
-				<String>1.0.0.22</String>
+				<String>1.0.0.31</String>
 			</Property>
 			<Property Name="Creator">
 				<String>Andreas Stark</String>
@@ -31,7 +31,7 @@
 						<String>PharLap</String>
 					</Property>
 					<Property Name="IP Address">
-						<String>10.88.1.181</String>
+						<String>10.88.1.173</String>
 					</Property>
 					<Property Name="Control Loop Processor">
 						<I32>-2</I32>
@@ -55,7 +55,7 @@
 						<Boolean>false</Boolean>
 					</Property>
 					<Property Name="Engine Rate">
-						<Double>1000</Double>
+						<Double>500</Double>
 					</Property>
 					<Property Name="TL timeout">
 						<Double>120</Double>
@@ -203,7 +203,7 @@
 								<String>3.0.1</String>
 							</Property>
 							<Property Name="user.CD.DBHash">
-								<BinaryString>MTJkOGUyYjkwYjdlMmY5YzcxY2JjYzJjNmU0ZDEyZmY=</BinaryString>
+								<BinaryString>N2U3ZGNiYjUyODQ3ZTkxNTU1NWVjMDE2MTU3YWJkYmI=</BinaryString>
 							</Property>
 							<Property Name="user.CD.Win File Path">
 								<String>U:\NI\VeriStand\CustomDevices + Installers\ARINC\ARINC 429 AIT+SEA\Validation Testing\VS\AIT-SEA test\ARINC DB\AIT_SEA_testDB_PXI_Tx.xml</String>
@@ -214,7 +214,7 @@
 							<Description />
 							<Properties>
 								<Property Name="user.CD.InputsReadRate">
-									<Double>1000</Double>
+									<Double>500</Double>
 								</Property>
 							</Properties>
 							<Errors />
@@ -251,7 +251,7 @@
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>Ml9SeDA=</BinaryString>
+											<String>2_Rx0</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -313,7 +313,7 @@
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>Ml9SeDE=</BinaryString>
+											<String>2_Rx1</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -375,7 +375,7 @@
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>Ml9SeDI=</BinaryString>
+											<String>2_Rx2</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -433,6 +433,228 @@
 											<U32>0</U32>
 										</Property>
 										<Property Name="user.CD.transferPeriod">
+											<U32>2</U32>
+										</Property>
+										<Property Name="user.CD.txRate">
+											<Double>500</Double>
+										</Property>
+										<Property Name="user.CD.SDI_Enabled">
+											<Boolean>false</Boolean>
+										</Property>
+										<Property Name="user.CD.SDIValue">
+											<Variant>
+												<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
+												<Data>AAAAIBIAgAQAAAABAA9ABQAIU0RJVmFsdWUAAAEAAAAAAAAA</Data>
+											</Variant>
+										</Property>
+										<Property Name="user.CD.bufferSize">
+											<U32>1</U32>
+										</Property>
+										<Property Name="user.CD.xmlName">
+											<String>Transfer_0</String>
+										</Property>
+										<Property Name="user.CD.TransferType">
+											<U16>0</U16>
+										</Property>
+									</Properties>
+									<Errors />
+									<Section Name="Word 1" TypeGUID="e863b59a-2425-4ba9-866f-b01b318941b7">
+										<Description />
+										<Properties />
+										<Errors />
+										<Channel Name="Transfer_0_Data" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C951" RowDim="1" ColDim="1" Units="" BitFields="15">
+											<Description />
+											<Properties>
+												<Property Name="user.CD.Start Bit">
+													<I32>10</I32>
+												</Property>
+												<Property Name="user.CD.Num Bits">
+													<I32>19</I32>
+												</Property>
+												<Property Name="user.CD.ScaleFac">
+													<Double>1</Double>
+												</Property>
+												<Property Name="user.CD.ScaleOffset">
+													<Double>0</Double>
+												</Property>
+												<Property Name="user.CD.Signed?">
+													<Boolean>false</Boolean>
+												</Property>
+												<Property Name="DataSource">
+													<DataSourceNode Channel="Targets/Controller/Calculated Channels/i++" />
+												</Property>
+											</Properties>
+											<Errors />
+											<DefaultValue>
+												<Elem>0</Elem>
+											</DefaultValue>
+										</Channel>
+									</Section>
+									<Channel Name="Disable" TypeGUID="620FF26C-B46F-A798-9FE7-99E7CBCC898B" RowDim="1" ColDim="1" Units="" BitFields="15">
+										<Description />
+										<Properties />
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
+								<Section Name="Transfer_1" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C911">
+									<Description />
+									<Properties>
+										<Property Name="user.CD.Label">
+											<U32>1</U32>
+										</Property>
+										<Property Name="user.CD.transferPeriod">
+											<U32>2</U32>
+										</Property>
+										<Property Name="user.CD.txRate">
+											<Double>500</Double>
+										</Property>
+										<Property Name="user.CD.SDI_Enabled">
+											<Boolean>false</Boolean>
+										</Property>
+										<Property Name="user.CD.SDIValue">
+											<Variant>
+												<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
+												<Data>AAAAIBIAgAQAAAABAA9ABQAIU0RJVmFsdWUAAAEAAAAAAAAA</Data>
+											</Variant>
+										</Property>
+										<Property Name="user.CD.bufferSize">
+											<U32>1</U32>
+										</Property>
+										<Property Name="user.CD.xmlName">
+											<String>Transfer_1</String>
+										</Property>
+										<Property Name="user.CD.TransferType">
+											<U16>0</U16>
+										</Property>
+									</Properties>
+									<Errors />
+									<Section Name="Word 1" TypeGUID="e863b59a-2425-4ba9-866f-b01b318941b7">
+										<Description />
+										<Properties />
+										<Errors />
+										<Channel Name="Transfer_1_Data" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C951" RowDim="1" ColDim="1" Units="" BitFields="15">
+											<Description />
+											<Properties>
+												<Property Name="user.CD.Start Bit">
+													<I32>10</I32>
+												</Property>
+												<Property Name="user.CD.Num Bits">
+													<I32>19</I32>
+												</Property>
+												<Property Name="user.CD.ScaleFac">
+													<Double>1</Double>
+												</Property>
+												<Property Name="user.CD.ScaleOffset">
+													<Double>0</Double>
+												</Property>
+												<Property Name="user.CD.Signed?">
+													<Boolean>false</Boolean>
+												</Property>
+											</Properties>
+											<Errors />
+											<DefaultValue>
+												<Elem>0</Elem>
+											</DefaultValue>
+										</Channel>
+									</Section>
+									<Channel Name="Disable" TypeGUID="620FF26C-B46F-A798-9FE7-99E7CBCC898B" RowDim="1" ColDim="1" Units="" BitFields="15">
+										<Description />
+										<Properties />
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
+								<Section Name="Transfer_2" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C911">
+									<Description />
+									<Properties>
+										<Property Name="user.CD.Label">
+											<U32>2</U32>
+										</Property>
+										<Property Name="user.CD.transferPeriod">
+											<U32>2</U32>
+										</Property>
+										<Property Name="user.CD.txRate">
+											<Double>500</Double>
+										</Property>
+										<Property Name="user.CD.SDI_Enabled">
+											<Boolean>false</Boolean>
+										</Property>
+										<Property Name="user.CD.SDIValue">
+											<Variant>
+												<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
+												<Data>AAAAIBIAgAQAAAABAA9ABQAIU0RJVmFsdWUAAAEAAAAAAAAA</Data>
+											</Variant>
+										</Property>
+										<Property Name="user.CD.bufferSize">
+											<U32>1</U32>
+										</Property>
+										<Property Name="user.CD.xmlName">
+											<String>Transfer_2</String>
+										</Property>
+										<Property Name="user.CD.TransferType">
+											<U16>0</U16>
+										</Property>
+									</Properties>
+									<Errors />
+									<Section Name="Word 1" TypeGUID="e863b59a-2425-4ba9-866f-b01b318941b7">
+										<Description />
+										<Properties />
+										<Errors />
+										<Channel Name="Transfer_2_Data" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C951" RowDim="1" ColDim="1" Units="" BitFields="15">
+											<Description />
+											<Properties>
+												<Property Name="user.CD.Start Bit">
+													<I32>10</I32>
+												</Property>
+												<Property Name="user.CD.Num Bits">
+													<I32>19</I32>
+												</Property>
+												<Property Name="user.CD.ScaleFac">
+													<Double>1</Double>
+												</Property>
+												<Property Name="user.CD.ScaleOffset">
+													<Double>0</Double>
+												</Property>
+												<Property Name="user.CD.Signed?">
+													<Boolean>false</Boolean>
+												</Property>
+											</Properties>
+											<Errors />
+											<DefaultValue>
+												<Elem>0</Elem>
+											</DefaultValue>
+										</Channel>
+									</Section>
+									<Channel Name="Disable" TypeGUID="620FF26C-B46F-A798-9FE7-99E7CBCC898B" RowDim="1" ColDim="1" Units="" BitFields="15">
+										<Description />
+										<Properties />
+										<Errors />
+										<DefaultValue>
+											<Elem>0</Elem>
+										</DefaultValue>
+									</Channel>
+								</Section>
+							</Section>
+							<Section Name="Tx1" TypeGUID="7E8619EB-70E6-9299-14EE-99E8B20A7109">
+								<Description />
+								<Properties>
+									<Property Name="user.CD.Channel #">
+										<U16>1</U16>
+									</Property>
+								</Properties>
+								<Errors />
+								<Section Name="Transfer_0" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C911">
+									<Description />
+									<Properties>
+										<Property Name="user.CD.Label">
+											<U32>0</U32>
+										</Property>
+										<Property Name="user.CD.transferPeriod">
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.txRate">
@@ -479,9 +701,6 @@
 												</Property>
 												<Property Name="user.CD.Signed?">
 													<Boolean>false</Boolean>
-												</Property>
-												<Property Name="DataSource">
-													<DataSourceNode Channel="Targets/Controller/Calculated Channels/i++" />
 												</Property>
 											</Properties>
 											<Errors />
@@ -595,225 +814,6 @@
 										</Property>
 										<Property Name="user.CD.xmlName">
 											<String>Transfer_2</String>
-										</Property>
-										<Property Name="user.CD.TransferType">
-											<U16>0</U16>
-										</Property>
-									</Properties>
-									<Errors />
-									<Section Name="Word 1" TypeGUID="e863b59a-2425-4ba9-866f-b01b318941b7">
-										<Description />
-										<Properties />
-										<Errors />
-										<Channel Name="Transfer_2_Data" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C951" RowDim="1" ColDim="1" Units="" BitFields="15">
-											<Description />
-											<Properties>
-												<Property Name="user.CD.Start Bit">
-													<I32>10</I32>
-												</Property>
-												<Property Name="user.CD.Num Bits">
-													<I32>19</I32>
-												</Property>
-												<Property Name="user.CD.ScaleFac">
-													<Double>1</Double>
-												</Property>
-												<Property Name="user.CD.ScaleOffset">
-													<Double>0</Double>
-												</Property>
-												<Property Name="user.CD.Signed?">
-													<Boolean>false</Boolean>
-												</Property>
-											</Properties>
-											<Errors />
-											<DefaultValue>
-												<Elem>0</Elem>
-											</DefaultValue>
-										</Channel>
-									</Section>
-									<Channel Name="Disable" TypeGUID="620FF26C-B46F-A798-9FE7-99E7CBCC898B" RowDim="1" ColDim="1" Units="" BitFields="15">
-										<Description />
-										<Properties />
-										<Errors />
-										<DefaultValue>
-											<Elem>0</Elem>
-										</DefaultValue>
-									</Channel>
-								</Section>
-							</Section>
-							<Section Name="Tx1" TypeGUID="7E8619EB-70E6-9299-14EE-99E8B20A7109">
-								<Description />
-								<Properties>
-									<Property Name="user.CD.Channel #">
-										<U16>1</U16>
-									</Property>
-								</Properties>
-								<Errors />
-								<Section Name="Transfer_0" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C911">
-									<Description />
-									<Properties>
-										<Property Name="user.CD.Label">
-											<U32>0</U32>
-										</Property>
-										<Property Name="user.CD.transferPeriod">
-											<U32>1</U32>
-										</Property>
-										<Property Name="user.CD.txRate">
-											<Double>1000</Double>
-										</Property>
-										<Property Name="user.CD.SDI_Enabled">
-											<Boolean>false</Boolean>
-										</Property>
-										<Property Name="user.CD.SDIValue">
-											<Variant>
-												<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-												<Data>AAAAIBIAgAQAAAABAA9ABQAIU0RJVmFsdWUAAAEAAAAAAAAA</Data>
-											</Variant>
-										</Property>
-										<Property Name="user.CD.bufferSize">
-											<U32>1</U32>
-										</Property>
-										<Property Name="user.CD.xmlName">
-											<BinaryString>VHJhbnNmZXJfMA==</BinaryString>
-										</Property>
-										<Property Name="user.CD.TransferType">
-											<U16>0</U16>
-										</Property>
-									</Properties>
-									<Errors />
-									<Section Name="Word 1" TypeGUID="e863b59a-2425-4ba9-866f-b01b318941b7">
-										<Description />
-										<Properties />
-										<Errors />
-										<Channel Name="Transfer_0_Data" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C951" RowDim="1" ColDim="1" Units="" BitFields="15">
-											<Description />
-											<Properties>
-												<Property Name="user.CD.Start Bit">
-													<I32>10</I32>
-												</Property>
-												<Property Name="user.CD.Num Bits">
-													<I32>19</I32>
-												</Property>
-												<Property Name="user.CD.ScaleFac">
-													<Double>1</Double>
-												</Property>
-												<Property Name="user.CD.ScaleOffset">
-													<Double>0</Double>
-												</Property>
-												<Property Name="user.CD.Signed?">
-													<Boolean>false</Boolean>
-												</Property>
-											</Properties>
-											<Errors />
-											<DefaultValue>
-												<Elem>0</Elem>
-											</DefaultValue>
-										</Channel>
-									</Section>
-									<Channel Name="Disable" TypeGUID="620FF26C-B46F-A798-9FE7-99E7CBCC898B" RowDim="1" ColDim="1" Units="" BitFields="15">
-										<Description />
-										<Properties />
-										<Errors />
-										<DefaultValue>
-											<Elem>0</Elem>
-										</DefaultValue>
-									</Channel>
-								</Section>
-								<Section Name="Transfer_1" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C911">
-									<Description />
-									<Properties>
-										<Property Name="user.CD.Label">
-											<U32>1</U32>
-										</Property>
-										<Property Name="user.CD.transferPeriod">
-											<U32>1</U32>
-										</Property>
-										<Property Name="user.CD.txRate">
-											<Double>1000</Double>
-										</Property>
-										<Property Name="user.CD.SDI_Enabled">
-											<Boolean>false</Boolean>
-										</Property>
-										<Property Name="user.CD.SDIValue">
-											<Variant>
-												<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-												<Data>AAAAIBIAgAQAAAABAA9ABQAIU0RJVmFsdWUAAAEAAAAAAAAA</Data>
-											</Variant>
-										</Property>
-										<Property Name="user.CD.bufferSize">
-											<U32>1</U32>
-										</Property>
-										<Property Name="user.CD.xmlName">
-											<BinaryString>VHJhbnNmZXJfMQ==</BinaryString>
-										</Property>
-										<Property Name="user.CD.TransferType">
-											<U16>0</U16>
-										</Property>
-									</Properties>
-									<Errors />
-									<Section Name="Word 1" TypeGUID="e863b59a-2425-4ba9-866f-b01b318941b7">
-										<Description />
-										<Properties />
-										<Errors />
-										<Channel Name="Transfer_1_Data" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C951" RowDim="1" ColDim="1" Units="" BitFields="15">
-											<Description />
-											<Properties>
-												<Property Name="user.CD.Start Bit">
-													<I32>10</I32>
-												</Property>
-												<Property Name="user.CD.Num Bits">
-													<I32>19</I32>
-												</Property>
-												<Property Name="user.CD.ScaleFac">
-													<Double>1</Double>
-												</Property>
-												<Property Name="user.CD.ScaleOffset">
-													<Double>0</Double>
-												</Property>
-												<Property Name="user.CD.Signed?">
-													<Boolean>false</Boolean>
-												</Property>
-											</Properties>
-											<Errors />
-											<DefaultValue>
-												<Elem>0</Elem>
-											</DefaultValue>
-										</Channel>
-									</Section>
-									<Channel Name="Disable" TypeGUID="620FF26C-B46F-A798-9FE7-99E7CBCC898B" RowDim="1" ColDim="1" Units="" BitFields="15">
-										<Description />
-										<Properties />
-										<Errors />
-										<DefaultValue>
-											<Elem>0</Elem>
-										</DefaultValue>
-									</Channel>
-								</Section>
-								<Section Name="Transfer_2" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C911">
-									<Description />
-									<Properties>
-										<Property Name="user.CD.Label">
-											<U32>2</U32>
-										</Property>
-										<Property Name="user.CD.transferPeriod">
-											<U32>1</U32>
-										</Property>
-										<Property Name="user.CD.txRate">
-											<Double>1000</Double>
-										</Property>
-										<Property Name="user.CD.SDI_Enabled">
-											<Boolean>false</Boolean>
-										</Property>
-										<Property Name="user.CD.SDIValue">
-											<Variant>
-												<Type>AAAACgAUQDD/////C2RhdGEgc3RyaW5n</Type>
-												<Data>AAAAIBIAgAQAAAABAA9ABQAIU0RJVmFsdWUAAAEAAAAAAAAA</Data>
-											</Variant>
-										</Property>
-										<Property Name="user.CD.bufferSize">
-											<U32>1</U32>
-										</Property>
-										<Property Name="user.CD.xmlName">
-											<BinaryString>VHJhbnNmZXJfMg==</BinaryString>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2021,7 +2021,7 @@
 								</Variant>
 							</Property>
 							<Property Name="user.CD.DBHash">
-								<BinaryString>ZWI5YjZmZTE1ZjU4ZmMxOGViMjUzNTMwNWNjMDUwODE=</BinaryString>
+								<BinaryString>YjYyNmMzZTQ3NTUwY2EyNDA5Y2FkMWI5Yjc4OTg3MWU=</BinaryString>
 							</Property>
 							<Property Name="user.CD.Win File Path">
 								<String>U:\NI\VeriStand\CustomDevices + Installers\ARINC\ARINC 429 AIT+SEA\Validation Testing\VS\AIT-SEA test\ARINC DB\AIT_SEA_testDB_cRIO_Rx.xml</String>
@@ -2093,7 +2093,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>MV9SeDA=</BinaryString>
+											<String>1_Rx0</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2163,7 +2163,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>MV9SeDE=</BinaryString>
+											<String>1_Rx1</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2233,7 +2233,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>MV9SeDI=</BinaryString>
+											<String>1_Rx2</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2312,7 +2312,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>Ml9SeDA=</BinaryString>
+											<String>2_Rx0</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2347,7 +2347,7 @@ Sends ARINC Word on rising edge</Description>
 												<Elem>0</Elem>
 											</DefaultValue>
 										</Channel>
-										<Channel Name="Data" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C951" RowDim="1" ColDim="1" Units="" BitFields="15">
+										<Channel Name="2_Rx0_Data" TypeGUID="961BA415-D612-25DB-1EE4-93AC9399C951" RowDim="1" ColDim="1" Units="" BitFields="13">
 											<Description />
 											<Properties>
 												<Property Name="user.CD.Start Bit">
@@ -2355,6 +2355,15 @@ Sends ARINC Word on rising edge</Description>
 												</Property>
 												<Property Name="user.CD.Num Bits">
 													<I32>19</I32>
+												</Property>
+												<Property Name="user.CD.ScaleFac">
+													<Double>1</Double>
+												</Property>
+												<Property Name="user.CD.ScaleOffset">
+													<Double>0</Double>
+												</Property>
+												<Property Name="user.CD.Signed?">
+													<Boolean>false</Boolean>
 												</Property>
 											</Properties>
 											<Errors />
@@ -2397,7 +2406,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>Ml9SeDE=</BinaryString>
+											<String>2_Rx1</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2467,7 +2476,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>Ml9SeDI=</BinaryString>
+											<String>2_Rx2</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2546,7 +2555,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>M19SeDA=</BinaryString>
+											<String>3_Rx0</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2616,7 +2625,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>M19SeDE=</BinaryString>
+											<String>3_Rx1</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2686,7 +2695,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>M19SeDI=</BinaryString>
+											<String>3_Rx2</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2765,7 +2774,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>NF9SeDA=</BinaryString>
+											<String>4_Rx0</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2835,7 +2844,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>NF9SeDE=</BinaryString>
+											<String>4_Rx1</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2905,7 +2914,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>NF9SeDI=</BinaryString>
+											<String>4_Rx2</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -2984,7 +2993,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>NV9SeDA=</BinaryString>
+											<String>5_Rx0</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -3054,7 +3063,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>NV9SeDE=</BinaryString>
+											<String>5_Rx1</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -3124,7 +3133,7 @@ Sends ARINC Word on rising edge</Description>
 											<U32>1</U32>
 										</Property>
 										<Property Name="user.CD.xmlName">
-											<BinaryString>NV9SeDI=</BinaryString>
+											<String>5_Rx2</String>
 										</Property>
 										<Property Name="user.CD.TransferType">
 											<U16>0</U16>
@@ -3355,6 +3364,19 @@ Values
 										<Property Name="user.CD.Decimation">
 											<I32>1</I32>
 										</Property>
+										<Property Name="user.CD.Log Channel Names">
+											<StringArray>
+												<Elem>2_Rx0 Timestamp</Elem>
+												<Elem>2_Rx0_ALL</Elem>
+												<Elem>2_Rx0_Data</Elem>
+												<Elem>Error Code</Elem>
+												<Elem>Inputs Loop Duration</Elem>
+												<Elem>Outputs Loop Duration</Elem>
+												<Elem>ARINC Frame dt</Elem>
+												<Elem>Absolute Time</Elem>
+												<Elem>HP Count</Elem>
+											</StringArray>
+										</Property>
 										<Property Name="user.CD.Log Channel  1">
 											<DependentNode Path="Targets/cRIO_Pharlap/Custom Devices/ARINC 429 SEA/Inputs/Rx2/2_Rx0/2_Rx0 Timestamp" />
 										</Property>
@@ -3362,14 +3384,25 @@ Values
 											<DependentNode Path="Targets/cRIO_Pharlap/Custom Devices/ARINC 429 SEA/Inputs/Rx2/2_Rx0/Word 1/2_Rx0_ALL" />
 										</Property>
 										<Property Name="user.CD.Log Channel  3">
-											<DependentNode Path="Targets/cRIO_Pharlap/Custom Devices/ARINC 429 SEA/Inputs/Rx2/2_Rx0/Word 1/Data" />
+											<DependentNode Path="Targets/cRIO_Pharlap/Custom Devices/ARINC 429 SEA/Inputs/Rx2/2_Rx0/Word 1/2_Rx0_Data" />
 										</Property>
-										<Property Name="user.CD.Log Channel Names">
-											<StringArray>
-												<Elem>2_Rx0 Timestamp</Elem>
-												<Elem>2_Rx0_ALL</Elem>
-												<Elem>Data</Elem>
-											</StringArray>
+										<Property Name="user.CD.Log Channel  4">
+											<DependentNode Path="Targets/cRIO_Pharlap/Custom Devices/ARINC 429 SEA/Status/Error Code" />
+										</Property>
+										<Property Name="user.CD.Log Channel  5">
+											<DependentNode Path="Targets/cRIO_Pharlap/Custom Devices/ARINC 429 SEA/Status/Inputs Loop Duration" />
+										</Property>
+										<Property Name="user.CD.Log Channel  6">
+											<DependentNode Path="Targets/cRIO_Pharlap/Custom Devices/ARINC 429 SEA/Status/Outputs Loop Duration" />
+										</Property>
+										<Property Name="user.CD.Log Channel  7">
+											<DependentNode Path="Targets/cRIO_Pharlap/Calculated Channels/ARINC Frame dt" />
+										</Property>
+										<Property Name="user.CD.Log Channel  8">
+											<DependentNode Path="Targets/cRIO_Pharlap/System Channels/Absolute Time" />
+										</Property>
+										<Property Name="user.CD.Log Channel  9">
+											<DependentNode Path="Targets/cRIO_Pharlap/System Channels/HP Count" />
 										</Property>
 									</Properties>
 									<Errors />
@@ -3411,6 +3444,14 @@ Increase the FIFO Depth value for the Embedded Data Logger to avoid data loss.</
 					<Description />
 					<Properties />
 					<Errors />
+					<Channel Name="ARINC diff errors" TypeGUID="03D3B6C6-1485-13A6-56609EA3AE19E356" RowDim="1" ColDim="1" Units="" BitFields="7">
+						<Description />
+						<Properties />
+						<Errors />
+						<DefaultValue>
+							<Elem>0</Elem>
+						</DefaultValue>
+					</Channel>
 				</Section>
 				<Section Name="Calculated Channels" TypeGUID="03D3B714-1485-13A6-56031C5F1CCB78A9">
 					<Description />
@@ -3461,6 +3502,51 @@ Increase the FIFO Depth value for the Embedded Data Logger to avoid data loss.</
 							<Elem>0</Elem>
 						</DefaultValue>
 					</Channel>
+					<Channel Name="ARINC Frame data increment" TypeGUID="03D3B772-1485-13A6-56D8DB23F9C234C2" RowDim="1" ColDim="1" Units="" BitFields="1">
+						<Description />
+						<Properties>
+							<Property Name="CalcCh:Type">
+								<U16>0</U16>
+							</Property>
+							<Property Name="CalcCh:Formula:FormulaString">
+								<StringArray>
+									<Elem>[data(t-0)]</Elem>
+									<Elem>-</Elem>
+									<Elem>[data(t-1)]</Elem>
+								</StringArray>
+							</Property>
+							<Property Name="data(t-0)">
+								<DependentNode Path="Targets/cRIO_Pharlap/Custom Devices/ARINC 429 SEA/Inputs/Rx2/2_Rx0/Word 1/2_Rx0_Data" />
+							</Property>
+							<Property Name="data(t-1)">
+								<DependentNode Path="Targets/cRIO_Pharlap/Calculated Channels/previous ARINC frame data" />
+							</Property>
+						</Properties>
+						<Errors />
+						<DefaultValue>
+							<Elem>0</Elem>
+						</DefaultValue>
+					</Channel>
+					<Channel Name="previous ARINC frame data" TypeGUID="03D3B772-1485-13A6-56D8DB23F9C234C2" RowDim="1" ColDim="1" Units="" BitFields="1">
+						<Description />
+						<Properties>
+							<Property Name="CalcCh:Type">
+								<U16>0</U16>
+							</Property>
+							<Property Name="CalcCh:Formula:FormulaString">
+								<StringArray>
+									<Elem>[data (t-1)]</Elem>
+								</StringArray>
+							</Property>
+							<Property Name="data (t-1)">
+								<DependentNode Path="Targets/cRIO_Pharlap/Custom Devices/ARINC 429 SEA/Inputs/Rx2/2_Rx0/Word 1/2_Rx0_Data" />
+							</Property>
+						</Properties>
+						<Errors />
+						<DefaultValue>
+							<Elem>0</Elem>
+						</DefaultValue>
+					</Channel>
 				</Section>
 				<Section Name="Stimulus" TypeGUID="03D3B7FF-1485-13A6-56B2328F9511AC8B">
 					<Description />
@@ -3491,11 +3577,112 @@ Increase the FIFO Depth value for the Embedded Data Logger to avoid data loss.</
 						</Property>
 					</Properties>
 					<Errors />
+					<Section Name="ARINC diff error" TypeGUID="03D3B791-1485-13A6-56D2B019287A4256">
+						<Description>tripped everytime the increment in the data portion of an ARINC word is larger than 1</Description>
+						<Properties>
+							<Property Name="Delay">
+								<Double>0</Double>
+							</Property>
+							<Property Name="Priority">
+								<U32>0</U32>
+							</Property>
+							<Property Name="State">
+								<U32>1</U32>
+							</Property>
+							<Property Name="Mode">
+								<U32>0</U32>
+							</Property>
+							<Property Name="Channel Path">
+								<DependentNode Path="Targets/cRIO_Pharlap/Calculated Channels/ARINC Frame data increment" />
+							</Property>
+							<Property Name="High Limit Mode">
+								<U32>0</U32>
+							</Property>
+							<Property Name="High Limit">
+								<Double>1.1</Double>
+							</Property>
+							<Property Name="Low Limit Mode">
+								<U32>0</U32>
+							</Property>
+							<Property Name="Low Limit">
+								<Double>-0.001</Double>
+							</Property>
+							<Property Name="Procedure Path">
+								<DependentNode Path="Targets/cRIO_Pharlap/Procedures/increment ARINC error counter" />
+							</Property>
+						</Properties>
+						<Errors />
+					</Section>
 				</Section>
 				<Section Name="Procedures" TypeGUID="03D3B7B1-1485-13A6-56649C7783203F22">
 					<Description />
 					<Properties />
 					<Errors />
+					<Section Name="increment ARINC error counter" TypeGUID="03D3B7C0-1485-13A6-5652B22D1EEB1FA1">
+						<Description />
+						<Properties />
+						<Errors />
+						<Section Name="Set Variable" TypeGUID="e41ddd95-eff3-4578-b5b7-4ad8fcaf6b9a">
+							<Description />
+							<Properties>
+								<Property Name="Command.Value 1">
+									<Double>0</Double>
+								</Property>
+								<Property Name="Command.Value 2">
+									<Double>1</Double>
+								</Property>
+								<Property Name="Command.Function">
+									<U16>1</U16>
+								</Property>
+								<Property Name="Command.Value 1 Const">
+									<Boolean>false</Boolean>
+								</Property>
+								<Property Name="Command.Value 2 Const">
+									<Boolean>true</Boolean>
+								</Property>
+								<Property Name="Variable">
+									<DependentNode Path="Targets/cRIO_Pharlap/User Channels/ARINC diff errors" />
+								</Property>
+								<Property Name="Channel 1">
+									<DependentNode Path="Targets/cRIO_Pharlap/User Channels/ARINC diff errors" />
+								</Property>
+							</Properties>
+							<Errors />
+						</Section>
+						<Section Name="rearm Alarm" TypeGUID="e203af68-4b16-4bae-a211-7502c28a5642">
+							<Description />
+							<Properties>
+								<Property Name="Command.Priority">
+									<U32>0</U32>
+								</Property>
+								<Property Name="Command.Default State">
+									<I32>1</I32>
+								</Property>
+								<Property Name="Command.Delay">
+									<Double>0</Double>
+								</Property>
+								<Property Name="Command.Upper Limit">
+									<Double>1.1</Double>
+								</Property>
+								<Property Name="Command.Lower Limit">
+									<Double>-0.001</Double>
+								</Property>
+								<Property Name="Command.Function">
+									<I32>4</I32>
+								</Property>
+								<Property Name="Command.UL Const">
+									<Boolean>true</Boolean>
+								</Property>
+								<Property Name="Command.LL Const">
+									<Boolean>true</Boolean>
+								</Property>
+								<Property Name="Alarm">
+									<DependentNode Path="Targets/cRIO_Pharlap/Alarms/ARINC diff error" />
+								</Property>
+							</Properties>
+							<Errors />
+						</Section>
+					</Section>
 				</Section>
 				<Section Name="XNET Databases" TypeGUID="def5630b-577f-4ae9-9682-5f8ee445ee21">
 					<Description />

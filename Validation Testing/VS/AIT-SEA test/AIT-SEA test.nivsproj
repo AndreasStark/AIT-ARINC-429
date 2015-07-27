@@ -137,7 +137,7 @@
 				<Description />
 				<Properties>
 					<Property Name="Show Dialog">
-						<Boolean>true</Boolean>
+						<Boolean>false</Boolean>
 					</Property>
 					<Property Name="Play Sound">
 						<String>Disabled</String>
