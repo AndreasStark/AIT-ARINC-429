@@ -7,7 +7,7 @@
 		</xs:annotation>
 		<xs:complexType>
 			<xs:sequence>
-				<xs:choice>
+				<xs:choice minOccurs="0">
 					<xs:annotation>
 						<xs:documentation>These options have been deprecated and are not used.</xs:documentation>
 					</xs:annotation>
@@ -105,6 +105,207 @@
 				</xs:simpleType>
 			</xs:attribute>
 		</xs:complexType>
+	</xs:element>
+	<xs:element name="loaderBoard">
+		<xs:annotation>
+			<xs:documentation>A615 DataLoader Board</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="board429" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>AIT 429 board</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="dataLoaders">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element ref="dataLoader" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>A615 DataLoader. The count is limited by 429 hardware channel resources.</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+		<xs:unique name="LoaderBoardChannelNumberUnique">
+			<xs:selector xpath="avif:board429/avif:channel429|avif:dataLoaders/avif:dataLoader/avif:rxchannel|avif:dataLoaders/avif:dataLoader/avif:txchannel"/>
+			<xs:field xpath="@channelNumber"/>
+		</xs:unique>
+		<xs:unique name="LoaderBoardDiscreteUnique">
+			<xs:selector xpath="avif:dataLoaders/avif:dataLoader/avif:discreteMapping"/>
+			<xs:field xpath="@hardwareDiscrete"/>
+		</xs:unique>
+	</xs:element>
+	<xs:element name="dataLoader">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="rxchannel" maxOccurs="8">
+					<xs:complexType>
+						<xs:attribute name="dataloaderChannel" use="required">
+							<xs:annotation>
+								<xs:documentation>The 1-indexed channel number used to specify the rx channel within the dataloader configuration.</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:int">
+									<xs:minInclusive value="1"/>
+									<xs:maxInclusive value="8"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attributeGroup ref="channelNumberGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="txchannel" maxOccurs="4">
+					<xs:complexType>
+						<xs:attribute name="dataloaderChannel" use="required">
+							<xs:annotation>
+								<xs:documentation>The 1-indexed channel number used to specify the tx channel number within the dataloader configuration.</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:int">
+									<xs:minInclusive value="1"/>
+									<xs:maxInclusive value="4"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attributeGroup ref="channelNumberGroup"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="discreteMapping" minOccurs="0" maxOccurs="8">
+					<xs:complexType>
+						<xs:attribute name="dataloaderDiscrete" use="required">
+							<xs:annotation>
+								<xs:documentation>The 1-indexed discrete index used to specify the discrete defined in the dataloader configuration.</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:int">
+									<xs:minInclusive value="1"/>
+									<xs:maxInclusive value="8"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="hardwareDiscrete" use="required">
+							<xs:annotation>
+								<xs:documentation>The 1-indexed hardware discrete index associated with the dataLoaderDiscrete. The max value specified is limited by the underlying hardware.</xs:documentation>
+							</xs:annotation>
+							<xs:simpleType>
+								<xs:restriction base="xs:int">
+									<xs:minInclusive value="1"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attributeGroup ref="nameGroup"/>
+			<xs:attribute name="initialPollDelay" use="optional" default="50">
+				<xs:annotation>
+					<xs:documentation>The time (in ms) between the initial 4 transmissions of RTS, POL, and EPOL words when initializing communications with the dataloader target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="50"/>
+						<xs:maxInclusive value="250"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="initialRetryCount" default="3">
+				<xs:annotation>
+					<xs:documentation>The number of times the transmitter will resend the initial RTS, POL, or EPOL word when initializing communications with the dataloader target.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="3"/>
+						<xs:maxInclusive value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="pollDelay" use="optional" default="200">
+				<xs:annotation>
+					<xs:documentation>The time (in ms) between the RTS, POL, and EPOL words AFTER the initialRetryCount transmissions.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="200"/>
+						<xs:maxInclusive value="250"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="finalWordResponseTimeout" default="50">
+				<xs:annotation>
+					<xs:documentation>The amount of time (in ms) the transmitter will wait to receive an ACK or NAK after sending the final word of a record before resending the final word.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="50"/>
+						<xs:maxInclusive value="200"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="finalWordRetryCount" default="3">
+				<xs:annotation>
+					<xs:documentation>The number of times the transmitter shall retry transmission of the final word if an ACK or NAK is not received within the final word response timeout.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="3"/>
+						<xs:maxInclusive value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="identifySequenceTimeout" default="200">
+				<xs:annotation>
+					<xs:documentation>The amount of time (in ms) the loader will wait for a response to a Subsystem Identifier word transmission.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="200"/>
+						<xs:maxInclusive value="250"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="identifySequenceRetryCount" default="3">
+				<xs:annotation>
+					<xs:documentation>The number of times the loader will retry sending a Subsystem Identifier.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="3"/>
+						<xs:maxInclusive value="10"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+			<xs:attribute name="uploadCompleteTimeout" default="200">
+				<xs:annotation>
+					<xs:documentation>The amount of time (in ms) to wait after an automatic file upload for possible direction from the target before defaulting to automatic upload completion.</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:int">
+						<xs:minInclusive value="150"/>
+						<xs:maxInclusive value="250"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+		<xs:unique name="DataloaderTxChannelUnique">
+			<xs:selector xpath="avif:txchannel"/>
+			<xs:field xpath="@dataloaderChannel"/>
+		</xs:unique>
+		<xs:unique name="DataloaderRxChannelUnique">
+			<xs:selector xpath="avif:rxchannel"/>
+			<xs:field xpath="@dataloaderChannel"/>
+		</xs:unique>
+		<xs:unique name="DataLoaderDiscreteUnique">
+			<xs:selector xpath="avif:discreteMapping"/>
+			<xs:field xpath="@dataloaderDiscrete"/>
+		</xs:unique>
+		<xs:unique name="HardwareDiscreteUnique">
+			<xs:selector xpath="avif:discreteMapping"/>
+			<xs:field xpath="@hardwareDiscrete"/>
+		</xs:unique>
 	</xs:element>
 	<xs:element name="wordBuffer_SDI">
 		<xs:annotation>
@@ -820,4 +1021,17 @@ Note that not all hardware can accept changes in transmit voltage levels. If the
 			</xs:attribute>
 		</xs:complexType>
 	</xs:element>
+	<xs:attributeGroup name="channelReferenceGroup">
+		<xs:attribute name="channelNumberReference" use="required">
+			<xs:annotation>
+				<xs:documentation>The referenced board429 channel index. This value must be unique for all tx and rx channel references.</xs:documentation>
+			</xs:annotation>
+			<xs:simpleType>
+				<xs:restriction base="xs:int">
+					<xs:minInclusive value="1"/>
+					<xs:maxInclusive value="64"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:attributeGroup>
 </xs:schema>

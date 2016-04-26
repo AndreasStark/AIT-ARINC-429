@@ -1,0 +1,11 @@
+[Volume Id]
+DistributionGUID=5B238067-2D92-4782-81FC-B98E87298AFA
+DistPackageGUID={193316A4-D858-4A2F-8645-2475873F9CED}
+DistributionVersion=15.0
+DistributionType=Driver
+DistributionLanguage=0009
+Volume=1
+TotalNumberOfVolumesInDistribution=1
+ExePath=setup.exe
+UpdateInfoFile=Bin\updateInfo.xml
+MD5ChecksumFile=Bin\dist_md5_1.xml

@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<board429 xmlns="http://www.aviftech.com/Schemas/Databus/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.aviftech.com/Schemas/Databus/ file:///C:/Program%20Files%20(x86)/AIT/Flight%20Simulyzer/AIT_429.xsd" dataRateModifier="STANDARD" lowSpeedSelection="INTERMEDIATE_LOW_SPEED" sdiModeEnabled="false">
+    <boardIndex>1</boardIndex>
+        <channel429 channelNumber="1" name="ADP_SIMTEC" channelSpeed="HIGH_SPEED_CHANNEL">
+            <Rx>
+                <chronMonitor/>
+                <labels>
+                    <label labelId="83">
+                        <buffer name="L203_Altitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L203_Altitude_m" startBit="8" numberBits="18" scaleFactor="0.3048" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L203_Altitude_ft" startBit="8" numberBits="18" scaleFactor="1.0" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="84">
+                        <buffer name="L204_Baro_Corrected_Altitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L204_Baro_Corrected_Altitude_m" startBit="8" numberBits="21" scaleFactor="0.3048" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L204_Baro_Corrected_Altitude_ft" startBit="8" numberBits="18" scaleFactor="1.0" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="88">
+                        <buffer name="L210_True_Airspeed" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L210_True_Airspeed_mps" startBit="8" numberBits="15" scaleFactor="0.032125" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L210_True_Airspeed_kts" startBit="8" numberBits="15" scaleFactor="0.0625" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="8A">
+                        <buffer name="L212_Altitude_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L212_Altitude_Rate_mps" startBit="8" numberBits="12" scaleFactor=" 0.08128" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L212_Altitude_Rate_ftpmin" startBit="8" numberBits="12" scaleFactor="16.0" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="8D">
+                        <buffer name="L215_Impact_Pressure" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L215_Impact_Pressure_hpa" startBit="8" numberBits="14" scaleFactor="0.03125" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="B8">
+                        <buffer name="L270_Status_Information_DW1" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L270_StatusInfo" startBit="10" numberBits="13" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_MaintenenceModeFlag" startBit="10" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_SerialError" startBit="12" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_SensorErrorFlag" startBit="13" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_SPIerrorFlag" startBit="14" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_FlashCRCerror" startBit="15" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_FlashMemErrorFlag" startBit="16" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_FlashIOflag" startBit="17" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_WatchDogFlag" startBit="18" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_CPUerrorFlag" startBit="19" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_OtherResetFlag" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_BrownOutFlag" startBit="21" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_QNHflag" startBit="22" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L270_StatusInfo_NullingFlag" startBit="23" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="B9">
+                        <buffer name="L271_Heater_Mode_DW2" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L271_HeaterMode" startBit="10" numberBits="5" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L271_HeaterMode_ModeFlag0" startBit="10" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L271_HeaterMode_ModeFlag1" startBit="11" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L271_HeaterMode_FailedFlag" startBit="12" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L271_HeaterMode_LowTemp" startBit="13" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="L271_HeaterMode_HighTemp" startBit="15" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="C8">
+                        <buffer name="L310_QC_raw" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L310_QC_raw_hpa" startBit="8" numberBits="21" scaleFactor="0.0003814697265625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="C9">
+                        <buffer name="L311_PS_raw" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L311_PS_raw_hpa" startBit="8" numberBits="21" scaleFactor="0.001049041748046875" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="CA">
+                        <buffer name="L312_IAT" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L312_IAT_rad" startBit="8" numberBits="21" scaleFactor="0.000004150390625" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L312_IAT_dgc" startBit="8" numberBits="21" scaleFactor="0.000244140625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="CB">
+                        <buffer name="L313_BAT" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L313_BAT_rad" startBit="8" numberBits="21" scaleFactor="0.000004150390625" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L313_BAT_dgc" startBit="8" numberBits="21" scaleFactor="0.000244140625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="D0">
+                        <buffer name="L320_DR" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L320_DR_perc" startBit="8" numberBits="21" scaleFactor="0.000095367431640625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="D1">
+                        <buffer name="L321_HTR" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L321_HTR_rad" startBit="8" numberBits="21" scaleFactor="0.000004150390625" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L321_HTR_dgc" startBit="8" numberBits="21" scaleFactor="0.000244140625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="D2">
+                        <buffer name="L322_CUR" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L322_CUR_A" startBit="8" numberBits="21" scaleFactor="0.000095367431640625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="F0">
+                        <buffer name="L360_PS" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L311_PS_hpa" startBit="8" numberBits="21" scaleFactor="0.001049041748046875" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="F1">
+                        <buffer name="L361_PT" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L361_PT_hpa" startBit="8" numberBits="21" scaleFactor="0.001430511474609375" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="F2">
+                        <buffer name="L362_QC" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L362_QC_hpa" startBit="8" numberBits="21" scaleFactor="0.0003814697265625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="F3">
+                        <buffer name="L363_AoA" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L363_AoA_rad" startBit="8" numberBits="21" scaleFactor="0.000002918243408203" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L363_AoA_rdg" startBit="8" numberBits="21" scaleFactor="0.000171661376953125" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="F4">
+                        <buffer name="L364_AoS" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L364_AoS_rad" startBit="8" numberBits="21" scaleFactor="0.000002918243408203" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L363_AoS_rdg" startBit="8" numberBits="21" scaleFactor="0.000171661376953125" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="F5">
+                        <buffer name="L365_TAT" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L365_TAT_rad" startBit="8" numberBits="21" scaleFactor="0.000004150390625" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L365_TAT_dgc" startBit="8" numberBits="21" scaleFactor="0.000244140625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="F6">
+                        <buffer name="L366_SAT" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L366_SAT_rad" startBit="8" numberBits="21" scaleFactor="0.000004150390625" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L366_SAT_dgc" startBit="8" numberBits="21" scaleFactor="0.000244140625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="F7">
+                        <buffer name="L367_CR" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L367_CR_mps" startBit="8" numberBits="21" scaleFactor="0.000095367431640625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="F8">
+                        <buffer name="L370_Mach" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L370_Mach_mps" startBit="8" numberBits="21" scaleFactor=" 0.00063221" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="L370_Mach_mach" startBit="8" numberBits="21" scaleFactor="0.0000019073486328125" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="F9">
+                        <buffer name="L371_CAS" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L371_CAS_mps" startBit="8" numberBits="21" scaleFactor="0.000286102294921875" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="FA">
+                        <buffer name="L372_TAS" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L372_TAS_mps" startBit="8" numberBits="21" scaleFactor="0.000286102294921875" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="FB">
+                        <buffer name="L373_HP" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L373_HP_m" startBit="8" numberBits="21" scaleFactor="0.01430511474609375" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="FC">
+                        <buffer name="L374_dP_AoA" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L374_dP_AoA_hpa" startBit="8" numberBits="21" scaleFactor="0.0003814697265625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="FD">
+                        <buffer name="L375_dP_AoS" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L375_dP_AoS_hpa" startBit="8" numberBits="21" scaleFactor="0.0003814697265625" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                    <label labelId="FE">
+                        <buffer name="L376_HBARO" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="L376_HBARO_m" startBit="8" numberBits="21" scaleFactor="0.01430511474609375" scaleOffset="0.0" signed="True" /> -->
+                    </label>
+                </labels>
+            </Rx>
+        </channel429>
+            <channel429 channelNumber="2" name="AH-1000" channelSpeed="HIGH_SPEED_CHANNEL">
+            <Rx>
+                <chronMonitor/>
+                <labels>
+                    <label labelId="D0">
+                        <buffer name="L320_Magnetic_Heading" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Magnetic_Heading_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Magnetic_Heading_Angle_rad" startBit="10" numberBits="19" scaleFactor=" 0.00000020373" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="0C">
+                        <buffer name="L014_Magnetic_Heading_BCD" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Magnetic_Heading_Angle_Hundreds_of_degrees_rdg" startBit="26" numberBits="3" scaleFactor="1" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                        <!-- <parameter name="Magnetic_Heading_Angle_Tens of degrees_rdg" startBit="22" numberBits="4" scaleFactor="1" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                        <!-- <parameter name="Magnetic_Heading_Angle_Units of a degree_rdg" startBit="18" numberBits="4" scaleFactor="1" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                        <!-- <parameter name="Magnetic_Heading_Angle_Tenths of a degree_rdg" startBit="14" numberBits="4" scaleFactor="1" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                        <!-- <parameter name="Magnetic_Heading_Angle_Hundreds_of_degrees_rad" startBit="26" numberBits="3" scaleFactor=" 0.0170" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                        <!-- <parameter name="Magnetic_Heading_Angle_Tens of degrees_rad" startBit="22" numberBits="4" scaleFactor=" 0.0170" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                        <!-- <parameter name="Magnetic_Heading_Angle_Units of a degree_rad" startBit="18" numberBits="4" scaleFactor=" 0.0170" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                        <!-- <parameter name="Magnetic_Heading_Angle_Tenths of a degree_rad" startBit="14" numberBits="4" scaleFactor=" 0.0170" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                    </label>
+                    <label labelId="C0">
+                        <buffer name="L300_MSU_heading" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="MSU_Heading_rdg" startBit="13" numberBits="16" scaleFactor="0.0054931640625" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="MSU_Heading_rad" startBit="13" numberBits="16" scaleFactor=" 0.000093384" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="D4">
+                        <buffer name="L324_Pitch_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Pitch_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Pitch_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.00000020373" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="D5">
+                        <buffer name="L325_Roll_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Roll_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Roll_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.00000020373" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    
+              <!-- Ah-1000 custom upgrade START-->
+                    <!-- Inertial rate labels replaced by Magnetic body data - range is +-10000 mGauss (earth magnetic field strength is under +-1000 mGauss) -->
+                    <label labelId="DE">
+                        <buffer name="Mag_Body_Pitch" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Mag_Body_Pitch_raw" startBit="10" numberBits="19" scaleFactor="1.0" scaleOffset="0.0" signed="False" description=""/> -->
+                        <!-- <parameter name="Mag_Body_Pitch_mgauss" startBit="10" numberBits="19" scaleFactor="0.03814697265625" scaleOffset="0.0" signed="True" description="[mGauss]"/> -->
+                    </label>
+                    <label labelId="DF">
+                        <buffer name="Mag_Body_Roll" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Mag_Body_Roll_raw" startBit="10" numberBits="19" scaleFactor="1.0" scaleOffset="0.0" signed="False" description=""/> -->
+                        <!-- <parameter name="Mag_Body_Roll_mgauss" startBit="10" numberBits="19" scaleFactor="0.03814697265625" scaleOffset="0.0" signed="True" description="[mGauss]"/> -->
+                    </label>
+                    <label labelId="C1">
+                        <buffer name="Mag_Body_Yaw" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Mag_Body_Yaw_raw" startBit="10" numberBits="19" scaleFactor="1.0" scaleOffset="0.0" signed="False" description=""/> -->
+                        <!-- <parameter name="Mag_Body_Yaw_mgauss" startBit="10" numberBits="19" scaleFactor="0.03814697265625" scaleOffset="0.0" signed="True" description="[mGauss]"/> -->
+                    </label>
+              <!-- Ah-1000 custom upgrade END-->
+                    
+                    <label labelId="D6">
+                        <buffer name="L326_Body_Pitch_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Pitch_Rate_rdg_s" startBit="10" numberBits="19" scaleFactor="0.00000852212" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                        <!-- <parameter name="Body_Pitch_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.00000014488" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                    </label>
+                    <label labelId="D7">
+                        <buffer name="L327_Body_Roll_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Roll_Rate_rds_s" startBit="10" numberBits="19" scaleFactor="0.00000852212" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                        <!-- <parameter name="Body_Roll_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.00000014488" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                    </label>
+                    <label labelId="D8">
+                        <buffer name="L330_Body_Yaw_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Yaw_Rate_rds_s" startBit="10" numberBits="19" scaleFactor="0.00000852212" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                        <!-- <parameter name="Body_Yaw_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.00000014488" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                    </label>
+                    <label labelId="D9">
+                        <buffer name="L331_Body_Longitudinal_Acceleration" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Long_Acc" startBit="10" numberBits="19" scaleFactor="0.0000152588" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="DA">
+                        <buffer name="L332_Body_Lateral_Acceleration" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Lateral_Acceleration" startBit="10" numberBits="19" scaleFactor="0.0000152588" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="DB">
+                        <buffer name="L333_Body_Normal_Acceleration" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Normal_Acceleration" startBit="10" numberBits="19" scaleFactor="0.0000152588" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                     <label labelId="F4">
+                        <buffer name="L364_Vertical_Acceleration" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Vertical_Acceleration" startBit="16" numberBits="13" scaleFactor="0.0009765625" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="F5">
+                        <buffer name="L365_Inertial_Vertical_Speed" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Inertial_Vertical_Speed_ft_s" startBit="13" numberBits="16" scaleFactor="1" scaleOffset="0.0" signed="True" description="[ft/s]"/> -->
+                        <!-- <parameter name="Inertial_Vertical_Speed_m_s" startBit="13" numberBits="16" scaleFactor=" 0.305" scaleOffset="0.0" signed="True" description="[m/s]"/> -->
+                    </label>
+                    <label labelId="D2">
+                        <buffer name="L322_Flight_Path_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Flight_Path_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Flight_Path_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.000011673" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="F1">
+                        <buffer name="L361_Inertial_Attitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Inertial_Attitude_ft" startBit="10" numberBits="19" scaleFactor="0.5" scaleOffset="0.0" signed="True" description="[ft]"/> -->
+                        <!-- <parameter name="Inertial_Attitude_m" startBit="10" numberBits="19" scaleFactor=" 0.1524" scaleOffset="0.0" signed="True" description="[m]"/> -->
+                    </label>
+                     <label labelId="B8">
+                        <buffer name="L270_AHRS_Discrete_1" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Attitude_AlignMode" startBit="10" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Basic_Mode" startBit="11" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Normal_Attitude_Mode" startBit="12" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Magnetic_Heading_Mode" startBit="13" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Attitude_Invalid" startBit="14" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="DG_Heading_Mode" startBit="15" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="TAS_Invalid" startBit="17" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="AHRU_fault" startBit="18" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Heading_Align_Mode" startBit="19" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Heading_Invalid_Mode" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="External_Confguration_Data_Fail" startBit="26" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="B9">
+                        <buffer name="L271_AHRS_Discrete_2" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="MSU_fail" startBit="10" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Valid_configuration_data_BITE_test" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Power_supply_BITE_test" startBit="21" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Gyro_BITE_Test" startBit="22" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Accel_BITE_test" startBit="23" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Spare_BITE_Test_1" startBit="25" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Spare_BITE_Test_2" startBit="26" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Spare_BITE_Test_3" startBit="27" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Unit_Position_Program_mismatch" startBit="28" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                </labels>
+            </Rx>
+        </channel429>
+            <channel429 channelNumber="3" name="HG-2021" channelSpeed="HIGH_SPEED_CHANNEL">
+            <Rx>
+                <chronMonitor/>
+                <labels>
+                    <label labelId="30">
+                        <buffer name="L60_Measurement_Status" depth="1" parityEnabled="true"/>
+                         <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="C_N" startBit="11" numberBits="6" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Measurement_Code_Used" startBit="19" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Range_Rate_Or_Delta_Range_Status" startBit="21" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Rate_Measurement_Type" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Satellite_Position_Data_Used" startBit="17" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Sign_Status_Matrix_(SSM)" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="SVID" startBit="23" numberBits="6" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="SVID_Status_Isolation" startBit="22" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="User_Clock_Update" startBit="18" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="31">
+                        <buffer name="L61_Pseudo_Range" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Pseudo_Range_RAW" startBit="8" numberBits="21" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="Pseudo_Range_m" startBit="8" numberBits="21" scaleFactor="256.0" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->        
+                    </label>
+                    <label labelId="32">
+                        <buffer name="L62_Pseudo_Range_Fine" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Pseudo_Range_Fine_Raw" startBit="17" numberBits="11" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="Pseudo_Range_Fine_m" startBit="17" numberBits="11" scaleFactor="0.125" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->                     
+                    </label>
+                    <label labelId="33">
+                        <buffer name="L63_Range_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Range_Rate_M_Sec" startBit="8" numberBits="21" scaleFactor="0.00390625" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="Range_Rate_SIGN_RAW" startBit="8" numberBits="21" scaleFactor="1.0" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="34">
+                        <buffer name="L64_Delta_Range" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Delta_Range_M_Sec" startBit="8" numberBits="21" scaleFactor="0.00390625" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="Delta_Range_SIGN_RAW" startBit="8" numberBits="21" scaleFactor="1.0" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="35">
+                        <buffer name="L65_Sv_Position_X" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Coarse_RAW" startBit="8" numberBits="21" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="Coarse_m" startBit="8" numberBits="21" scaleFactor="64.0" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->                     
+                    </label>
+                    <label labelId="36">
+                        <buffer name="L66_Sv_Position_X_Fine" depth="1" parityEnabled="true"/>                                                      
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Fine_RAW" startBit="14" numberBits="14" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="Sv_Position_X_Fine_m" startBit="14" numberBits="14" scaleFactor="0.0039" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="38">
+                        <buffer name="L70_Sv_Position_Y" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Coarse_RAW" startBit="8" numberBits="21" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="Coarse_m" startBit="8" numberBits="21" scaleFactor="64.0" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="39">
+                        <buffer name="L71_Sv_Position_Y_Fine" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Fine_RAW" startBit="14" numberBits="14" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="Sv_Position_Y_Fine_m" startBit="14" numberBits="14" scaleFactor="0.0039" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="3A">
+                        <buffer name="L72_Sv_Position_Z" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Coarse_RAW" startBit="8" numberBits="21" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="Coarse_m" startBit="8" numberBits="21" scaleFactor="64.0" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->                     
+                    </label>
+                    <label labelId="3B">
+                        <buffer name="L73_Sv_Position_Z_Fine" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Fine_RAW" startBit="14" numberBits="14" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="Sv_Position_Z_Fine" startBit="14" numberBits="14" scaleFactor="0.0039" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="3C">
+                        <buffer name="L74_UTC_Measure_Time" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Measure_Time_RAW" startBit="8" numberBits="20" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="UTC_Measure_Time_Sec" startBit="8" numberBits="20" scaleFactor="0.00000953674" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="3E">
+                        <buffer name="L76_GPS_Altitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="GPS_Altitude_RAW" startBit="8" numberBits="21" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="GPS_Altitude_m" startBit="8" numberBits="21" scaleFactor="0.0381" scaleOffset="0.0" signed="True"/> --> 
+                        <!-- <parameter name="GPS_Altitude_ft" startBit="8" numberBits="21" scaleFactor="0.125" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->   
+                    </label>
+                    <label labelId="41">
+                        <buffer name="L101_HDOP" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="HDOP_RAW" startBit="13" numberBits="15" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="HDOP" startBit="13" numberBits="15" scaleFactor="0.03125" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="42">
+                        <buffer name="L102_VDOP" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="VDOP_RAW" startBit="13" numberBits="15" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="VDOP" startBit="13" numberBits="15" scaleFactor="0.03125" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->                     
+                    </label>
+                    <label labelId="43">
+                        <buffer name="L103_GPS_Track_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="GPS_Track_Angle_RAW" startBit="13" numberBits="16" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="GPS_Track_Angle_deg" startBit="13" numberBits="16" scaleFactor="0.00549316" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="GPS_Track_Angle_rad" startBit="13" numberBits="16" scaleFactor="0.000093384" scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="48">
+                        <buffer name="L110_GPS_Latitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Coarse_RAW" startBit="8" numberBits="21" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="Coarse_deg" startBit="8" numberBits="21" scaleFactor="0.000171661"  scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="Coarse_rad" startBit="8" numberBits="21" scaleFactor="0.0000029182"  scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="49">
+                        <buffer name="L111_GPS_Longitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Coarse_RAW" startBit="8" numberBits="21" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="Coarse_deg" startBit="8" numberBits="21" scaleFactor="0.000171661"  scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="Coarse_rad" startBit="8" numberBits="21" scaleFactor="0.0000029182"  scaleOffset="0.0" signed="True"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->  
+                    </label>
+                    <label labelId="4A">
+                        <buffer name="L112_GPS_Ground_Speed" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="GPS_Ground_Seppd_RAW" startBit="13" numberBits="15" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="GPS_Ground_Seppd_kmh" startBit="13" numberBits="15" scaleFactor="0.2315" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="GPS_Ground_Seppd_mps" startBit="13" numberBits="15" scaleFactor="0.0643" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="GPS_Ground_Seppd_knts" startBit="13" numberBits="15" scaleFactor="0.125" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="50">
+                        <buffer name="L120_GPS_Latitude_Fine" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Fine_RAW" startBit="17" numberBits="11" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->                      
+                    </label>
+                    <label labelId="51">
+                        <buffer name="L121_GPS_Longitude_Fine" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Fine_RAW" startBit="17" numberBits="11" scaleFactor="1.0" scaleOffset="0.0" signed="False"/> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->   
+                    </label>
+                    <label labelId="55">
+                        <buffer name="L125_UTC_1" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Hours" startBit="22" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Minutes" startBit="14" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Tens_Of_Hours" startBit="26" numberBits="3" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Tens_Of_Minutes" startBit="18" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Tenths_Of_Minutes" startBit="10" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="58">
+                        <buffer name="L130_AUT_Horiz_Integ_Limit" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="H_Integrity_Limit_nm" startBit="11" numberBits="17" scaleFactor="0.00012207" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="H_Integrity_Limit_m" startBit="11" numberBits="17" scaleFactor=" 0.22607364" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="H_Integrity_Limit_RAW" startBit="11" numberBits="17" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="5B">
+                        <buffer name="L133_AUT_Vert_Integ_Limit" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="V_Integrity_Limit_ft" startBit="11" numberBits="17" scaleFactor="0.125" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="V_Integrity_Limit_m" startBit="11" numberBits="17" scaleFactor="0.0381" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="V_Integrity_Limit_RAW" startBit="11" numberBits="17" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="5D">
+                        <buffer name="L135_Approach_Area_Vil" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="5E">
+                        <buffer name="L136_Vertical_Fom" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="VFOM_RAW" startBit="10" numberBits="19" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="VFOM_ft" startBit="10" numberBits="19" scaleFactor="0.125" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="VFOM_m" startBit="10" numberBits="19" scaleFactor="0.0381" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="60">
+                        <buffer name="L140_UTC_Fine" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Fine_RAW" startBit="18" numberBits="10" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Fine_Sec" startBit="18" numberBits="10" scaleFactor="0.000000953674" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="61">
+                        <buffer name="L141_UTC_Fine_Fractions" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Fine_Fractions_RAW" startBit="18" numberBits="10" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Fine_S_Fractions_Sec" startBit="18" numberBits="10" scaleFactor="0.000000000931323" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="63">
+                        <buffer name="L143_Approach_Area_HIL" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="68">
+                        <buffer name="L150_UTC_2" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Hours" startBit="23" numberBits="5" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Minutes" startBit="17" numberBits="6" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="UTC_Seconds" startBit="11" numberBits="6" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="6E">
+                        <buffer name="L156_Maintenance_1" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="6F">
+                        <buffer name="L157_Maintenance_2" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="72">
+                        <buffer name="L162_DEST_WPT_ETA" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="73">
+                        <buffer name="L163_ALT_WPT_ETA" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="75">
+                        <buffer name="L165_Vertical_Velocity" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Vert_Velocity_kmh" startBit="13" numberBits="16" scaleFactor="0.2315" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="Vert_Velocity_mps" startBit="13" numberBits="16" scaleFactor="0.064305555555" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="Vert_Velocity_knts" startBit="13" numberBits="16" scaleFactor="0.125" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="Vert_Velocity_RAW" startBit="13" numberBits="16" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="76">
+                        <buffer name="L166_N_S_Velocity" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="NS_Velocity_kmh" startBit="13" numberBits="16" scaleFactor="0.2315" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="NS_Velocity_mps" startBit="13" numberBits="16" scaleFactor="0.064305555555" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="NS_Velocity_knts" startBit="13" numberBits="16" scaleFactor="0.125" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="NS_Velocity_RAW" startBit="13" numberBits="16" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="7C">
+                        <buffer name="L174_E_W_Velocity" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="EW_Velocity_kmh" startBit="13" numberBits="16" scaleFactor="0.2315" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="EW_Velocity_mps" startBit="13" numberBits="16" scaleFactor="0.064305555555" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="EW_Velocity_knts" startBit="13" numberBits="16" scaleFactor="0.125" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="EW_Velocity_RAW" startBit="13" numberBits="16" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="A7">
+                        <buffer name="L247_Horizontal_FOM" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="HFOM_RAW" startBit="10" numberBits="18" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="HFOM_NM" startBit="10" numberBits="18" scaleFactor="0.0000610352" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->   
+                    </label>
+                    <label labelId="B0">
+                        <buffer name="L260_Date" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Day" startBit="23" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Tens_Of_Days" startBit="27" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Month" startBit="18" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Tens_Of_Months" startBit="22" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Year" startBit="10" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->                    
+                        <!-- <parameter name="Tens_Of_Years" startBit="14" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="BB">
+                        <buffer name="L273_GPS_Sensor_Status" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Sat_Visible" startBit="15" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Sat_Tracked" startBit="19" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="DADC_source" startBit="12" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="DADC_status" startBit="11" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="GPS_Sens_Op_Mode" startBit="25" numberBits="3" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="IRS_FMS_Source" startBit="14" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="IRS_FMS_Status" startBit="13" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->                     
+                    </label>
+                    <label labelId="E3">
+                        <buffer name="L343_DEST_WPT_HIL" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="E7">
+                        <buffer name="L347_ALT_WPT_HIL" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="EA">
+                        <buffer name="L352_Maintenance_Disc_1" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="EC">
+                        <buffer name="L354_Counter" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Seconds_Since_Power_Up" startBit="10" numberBits="18" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="ED">
+                        <buffer name="L355_Maintenance_Disc_2" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="DADS_Bus_No1" startBit="21" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="DADS_Bus_No2" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="GP_Diff_Bus_No1" startBit="19" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="GP_Diff_Bus_No2" startBit="18" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="GPS" startBit="24" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Input_Bus_No1" startBit="23" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Input_Bus_No2" startBit="22" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="OMS_Input_Bus" startBit="17" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="RF_Input" startBit="25" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Sensor_Unit" startBit="26" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Test_Inhibit" startBit="27" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="FF">
+                        <buffer name="L377_Equipment_ID" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Equipment_ID" startBit="10" numberBits="12" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                </labels>
+            </Rx>
+        </channel429>
+            <channel429 channelNumber="4" name="LR6" channelSpeed="HIGH_SPEED_CHANNEL">
+            <Rx>
+    		    <chronMonitor/>
+                <labels>
+                     <label labelId="07">
+                        <buffer name="L007_IR_Time_To_Nav" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Time_To_Nav_Tenths_Minutes" startBit="18" numberBits="4" scaleFactor="0.1" scaleOffset="0.0" signed="False" description="[min]"/> -->
+    					          <!-- <parameter name="Time_To_Nav_Units_Minutes" startBit="22" numberBits="4" scaleFactor="0.1" scaleOffset="0.0" signed="False" description="[min]"/> -->
+                        <!-- <parameter name="Time_To_Nav_Tenths_Minutes_s" startBit="18" numberBits="4" scaleFactor="0.00166666" scaleOffset="0.0" signed="False" description="[s]"/> -->
+    					          <!-- <parameter name="Time_To_Nav_Units_Minutes_s" startBit="22" numberBits="4" scaleFactor="0.00166666" scaleOffset="0.0" signed="False" description="[s]"/> -->
+                     </label>
+                      <label labelId="20">
+                        <buffer name="L040_Turn_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Turn_Rate_Rdg_s" startBit="10" numberBits="19" scaleFactor="0.00048828125" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                        <!-- <parameter name="Turn_Rate_Rad_s" startBit="10" numberBits="19" scaleFactor=" 0.00000830078125" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                    </label>
+                    <label labelId="56">
+                        <buffer name="L126_IR_Time_In_Nav" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Time_In_Nav_Minutes" startBit="13" numberBits="16" scaleFactor="1" scaleOffset="0.0" signed="True" description="[min]"/> -->
+                        <!-- <parameter name="Time_In_Nav_Minutes_s" startBit="13" numberBits="16" scaleFactor="0.0166666666" scaleOffset="0.0" signed="True" description="[s]"/> -->
+                     </label>
+                     <label labelId="B8">
+                        <buffer name="L270_IRS_Discrete_1" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Align_Mode" startBit="10" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Attitude_Mode" startBit="11" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Nav_Mode" startBit="12" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Set_Heading" startBit="13" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Attitude_Invalid" startBit="14" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Secondary_Power_Fail" startBit="15" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="On_Secondary_Power" startBit="16" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="ADS_Invalid" startBit="17" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="IRU_BITE_Fault" startBit="18" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Secondary_Power_Fail_Or_On_Secondary_Power" startBit="19" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Align_Fault" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="No_Initialization" startBit="21" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Excessive_Motion" startBit="22" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="ADS_IRU_Fault" startBit="23" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Enter_Position" startBit="24" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Time_To_Nav" startBit="25" numberBits="3" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="B9">
+                        <buffer name="L271_IRS_Discrete_2" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="AI_Mattitude" startBit="19" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+    					          <!-- <parameter name="Time_To_Nav" startBit="25" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Time_To_Nav_s" startBit="25" numberBits="4" scaleFactor="0.016666" scaleOffset="0.0" signed="False" /> -->
+    					          <!-- <parameter name="AIM" startBit="10" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="C8">
+                        <buffer name="L310_Position_Latitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Position_Latitude_rdg" startBit="8" numberBits="21" scaleFactor="0.000171661376953125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Position_Latitude_rad" startBit="8" numberBits="21" scaleFactor="0.00000291824340820" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                     </label>
+                     <label labelId="C9">
+                        <buffer name="L311_Position_Longitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Position_Longitude_rdg" startBit="8" numberBits="21" scaleFactor="0.000171661376953125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Position_Longitude_rad" startBit="8" numberBits="21" scaleFactor="0.00000291824340820" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                     </label>
+                     <label labelId="CA">
+                        <buffer name="L312_Ground_Speed" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Ground_Speed_knt" startBit="10" numberBits="19" scaleFactor="0.015625" scaleOffset="0.0" signed="True" description="[knt]"/> -->
+                        <!-- <parameter name="Ground_Speed_m_s" startBit="10" numberBits="19" scaleFactor="0.00803125" scaleOffset="0.0" signed="True" description="[m_s]"/> -->
+                     </label>
+                     <label labelId="CB">
+                        <buffer name="L313_True_Trk_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="True_Trk_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="True_Trk_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                     </label>
+                     <label labelId="CC">
+                        <buffer name="L314_True_Heading" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="True_Heading_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="True_Heading_rad" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                     </label>
+                     <label labelId="CD">
+                        <buffer name="L315_Wind_Speed" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Wind_Speed_knt" startBit="10" numberBits="19" scaleFactor="0.0009765625" scaleOffset="0.0" signed="True" description="[knt]"/> -->
+                        <!-- <parameter name="Wind_Speed_m_s" startBit="10" numberBits="19" scaleFactor="0.0005019531" scaleOffset="0.0" signed="True" description="[m_s]"/> -->
+                     </label>
+                     <label labelId="CE">
+                        <buffer name="L316_True_Wind_Direction" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="True_Wind_Direction_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="True_Wind_Direction_rad" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                     </label>
+                      <label labelId="CF">
+                        <buffer name="L317_Magnetic_Trk_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Magnetic_Trk_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Magnetic_Trk_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                     </label>
+                     <label labelId="D0">
+                        <buffer name="L320_Magnetic_Heading" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Magnetic_Heading_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Magnetic_Heading_rad" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                     </label>
+                     <label labelId="D1">
+                        <buffer name="L321_Drift_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Drift_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Drift_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                     </label>
+                     <label labelId="D2">
+                        <buffer name="L322_Flight_Path_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Flight_Path_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Flight_Path_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                     </label>
+                     <label labelId="D3">
+                        <buffer name="L323_Flight_Path_Accel" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Flight_Path_Accel_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Flight_Path_Accel_rad" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                     </label>
+    			           <label labelId="D4">
+                        <buffer name="L324_Pitch_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Pitch_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+    					          <!-- <parameter name="Pitch_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.00068664408" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                    </label>
+                    <label labelId="D5">
+                        <buffer name="L325_Roll_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Roll_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+    					          <!-- <parameter name="Roll_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.00068664408" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                    </label>
+                    <label labelId="D6">
+                        <buffer name="L326_Body_Pitch_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Pitch_Rate_rdg_s" startBit="10" numberBits="19" scaleFactor="0.00048828125" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                        <!-- <parameter name="Body_Pitch_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.0000830078125" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                    </label>
+    				        <label labelId="D7">
+                        <buffer name="L327_Body_Roll_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Roll_Rate_rdg_s" startBit="10" numberBits="19" scaleFactor="0.00048828125" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                        <!-- <parameter name="Body_Roll_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.0000830078125" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                    </label>
+    				        <label labelId="D8">
+                        <buffer name="L330_Body_Yaw_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Yaw_Rate_rdg_s" startBit="10" numberBits="19" scaleFactor="0.00048828125" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                        <!-- <parameter name="Body_Yaw_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.0000830078125" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                    </label>
+    				        <label labelId="D9">
+                        <buffer name="L331_Body_Long_Accel" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Long_Accel_g" startBit="10" numberBits="19" scaleFactor="0.0000152587890625" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="DA">
+                        <buffer name="L332_Body_Lat_Accel" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Lat_Accel_g" startBit="10" numberBits="19" scaleFactor="0.0000152587890625" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="DB">
+                        <buffer name="L333_Body_Norm_Accel" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Body_Norm_Accel_g" startBit="10" numberBits="19" scaleFactor="0.0000152587890625" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="DC">
+                        <buffer name="L334_Platform_heading" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Platform_heading_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Platform_heading_rad" startBit="10" numberBits="19" scaleFactor="0.00001167297363281" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="DD">
+                        <buffer name="L335_Track_Angle_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Track_Angle_Rate_rdg_s" startBit="10" numberBits="19" scaleFactor="0.0001220703125" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                        <!-- <parameter name="Track_Angle_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.0000020751953125" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                    </label>
+                    <label labelId="DE">
+                        <buffer name="L336_Pitch_Att_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Pitch_Att_Rate_rdg_s" startBit="10" numberBits="19" scaleFactor="0.00048828125" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                        <!-- <parameter name="Pitch_Att_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.00000830078125" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                    </label>
+                    <label labelId="DF">
+                        <buffer name="L337_Roll_Att_Rate" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Roll_Att_Rate_rdg_s" startBit="10" numberBits="19" scaleFactor="0.00048828125" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                        <!-- <parameter name="Roll_Att_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.00000830078125" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                    </label>
+                    <label labelId="E8">
+                        <buffer name="L350_IR_Maintenance" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Power_Supply_Fault" startBit="10" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+    					          <!-- <parameter name="Digital_IO_Fault" startBit="11" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Accelerometer_Fault" startBit="12" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Memory_Fault" startBit="13" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="OPS_OPC_CRC_Fault" startBit="14" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Gyro_Fault" startBit="16" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Air_Ground" startBit="17" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="PCI_Fault" startBit="18" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="System_Test_Fault" startBit="19" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Watchdog_Timer_Fault" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Discrete_IO_Fault" startBit="21" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="AD_Converter_Fault" startBit="23" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Post_Flight_AR_Position_Request" startBit="24" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Auto_Realignment_Active" startBit="25" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Extreme_Latitude" startBit="26" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="E9">
+                        <buffer name="L351_IR_Maintenance_Word_#2" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+    					      <label labelId="EC">
+                        <buffer name="L354_Cycle_Counter" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Cycle_Counter_20_ms_Count" startBit="10" numberBits="20" scaleFactor="1" scaleOffset="0.0" signed="True" description="[-]"/> -->
+                    </label>   
+                    <label labelId="ED">
+                        <buffer name="L355_Device_Status" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Invalid_GPS" startBit="10" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="No_GPS" startBit="11" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+    					          <!-- <parameter name="Invalid_ADS" startBit="12" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="No_ADS" startBit="11" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="IRS_Critical_Fault" startBit="14" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="APM_Invalid" startBit="15" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="APM_Blank" startBit="16" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="IRS_Non_Critical_Fault" startBit="18" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="ADS_or_GP_No1_Receiver_Fault" startBit="19" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="ADS_or_GP_No2_Receiver_Fault" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="GPS_No1_Receiver_Fault" startBit="21" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="GPS_No2_Receiver_Fault" startBit="22" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Tray_Alignment_Correction_Limit_Exceeded" startBit="23" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Reprogram_APM" startBit="24" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="APM_Failed_Flag" startBit="25" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="APM_Installation_Test_Not_Performed" startBit="26" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="APM_Installation_Test_Failed" startBit="27" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Program_Pin_Parity_Fail" startBit="28" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="F1">
+                        <buffer name="L361_Inertial_Altitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Inertial_Altitude_ft" startBit="8" numberBits="21" scaleFactor="0.125" scaleOffset="0.0" signed="True" description="[ft]"/> -->
+                        <!-- <parameter name="Inertial_Altitude_m" startBit="8" numberBits="21" scaleFactor="0.0381" scaleOffset="0.0" signed="True" description="[m]"/> -->
+                    </label> 
+                    <label labelId="F2">
+                        <buffer name="L362_Along_Track_Accel" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Along_Track_Accel_g" startBit="10" numberBits="19" scaleFactor="0.0000152587890625" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="F3">
+                        <buffer name="L363_Cross_Track_Accel" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Cross_Track_Accel_g" startBit="10" numberBits="19" scaleFactor="0.0000152587890625" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label> 
+                    <label labelId="F4">
+                        <buffer name="L364_Vertical_Accel" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Vertical_Accel_g" startBit="10" numberBits="19" scaleFactor="0.0000152587890625" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="F5">
+                        <buffer name="L365_Inertial_Vertical_Spd" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Inertial_Vertical_Spd_ft_min" startBit="10" numberBits="19" scaleFactor="0.125" scaleOffset="0.0" signed="True" description="[ft/min]"/> -->
+                        <!-- <parameter name="Inertial_Vertical_Spd_m_s" startBit="10" numberBits="19" scaleFactor="0.0006350" scaleOffset="0.0" signed="True" description="[m/s]"/> -->
+                    </label>
+                    <label labelId="F6">
+                        <buffer name="L366_N_S_Velocity" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="N_S_Velocity_knts" startBit="10" numberBits="19" scaleFactor="0.01563" scaleOffset="0.0" signed="True" description="[knts]"/> -->
+                        <!-- <parameter name="N_S_Velocity_m_s" startBit="10" numberBits="19" scaleFactor="0.00803382" scaleOffset="0.0" signed="True" description="[m/s]"/> -->
+                    </label>
+                    <label labelId="F7">
+                        <buffer name="L367_E_W_Velocity" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="E_W_Velocity_knts" startBit="10" numberBits="19" scaleFactor="0.01563" scaleOffset="0.0" signed="True" description="[knts]"/> -->
+                        <!-- <parameter name="E_W_Velocity_m_s" startBit="10" numberBits="19" scaleFactor="0.00803382" scaleOffset="0.0" signed="True" description="[m/s]"/> -->
+                    </label>
+                    <label labelId="F8">
+                        <buffer name="L370_Unbiased_Normal_Accel" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Unbiased_Normal_Accel_g" startBit="10" numberBits="19" scaleFactor="0.000030517578125" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="F9">
+                        <buffer name="L371_Equipment_ID" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Equipment_Code" startBit="10" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Equipment_Code" startBit="14" numberBits="4" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Company_Code" startBit="18" numberBits="6" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+    				        <label labelId="FD">
+                        <buffer name="L375_Along_Heading_Accel" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Along_Heading_Accel_g" startBit="10" numberBits="19" scaleFactor="0.0000152587890625" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="FE">
+                        <buffer name="L376_Cross_Heading_Accel" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Cross_Heading_Accel_g" startBit="10" numberBits="19" scaleFactor="0.0.0000152587890625" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                    </label>
+                    <label labelId="FF">
+                        <buffer name="L377_IRU_Part_Number" depth="1" parityEnabled="true"/>
+                         <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Sequence_Count" startBit="11" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Low_ASCII_Character" startBit="13" numberBits="8" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Hihg_ASCII_Character" startBit="21" numberBits="8" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="59">
+                        <buffer name="L131_Hyb_Horiz_Integrity_Limit" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_Horiz_Integrity_Limit_nm" startBit="11" numberBits="18" scaleFactor="0.0001220703125" scaleOffset="0.0" signed="True" description="[nm]"/> -->
+                        <!-- <parameter name="Hyb_Horiz_Integrity_Limit_m" startBit="11" numberBits="18" scaleFactor=" 0.22607421875" scaleOffset="0.0" signed="True" description="[m]"/> -->
+                    </label>
+                    <label labelId="5A">
+                        <buffer name="L132_Hyb_True_Heading" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_True_Heading_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                         <!-- <parameter name="Hyb_True_Heading_rad" startBit="10" numberBits="19" scaleFactor="0.0000116729736328" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="5D">
+                        <buffer name="L135_Hyb_Vertical_FOM" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_Vertical_FOM_ft" startBit="10" numberBits="19" scaleFactor="0.125" scaleOffset="0.0" signed="True" description="[ft]"/> -->
+                        <!-- <parameter name="Hyb_Vertical_FOM_m" startBit="10" numberBits="19" scaleFactor=" 0.0381" scaleOffset="0.0" signed="True" description="[m]"/> -->
+                    </label>
+                    <label labelId="5F">
+                        <buffer name="L137_Hyb_True_Track_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_True_Track_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Hyb_True_Track_Angle_rad" startBit="10" numberBits="19" scaleFactor=" 0.0000116729736" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="7D">
+                        <buffer name="L175_Hyb_Ground_Speed" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_Ground_Speed_knts" startBit="10" numberBits="19" scaleFactor="0.00015625" scaleOffset="0.0" signed="True" description="[knts]"/> -->
+                        <!-- <parameter name="Hyb_Ground_Speed_m_s" startBit="10" numberBits="19" scaleFactor="0.0000803125" scaleOffset="0.0" signed="True" description="[m/s]"/> -->
+                    </label>
+                    <label labelId="AC">
+                        <buffer name="L254_Hyb_Position_Latitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_Position_Latitude_rdg" startBit="8" numberBits="21" scaleFactor="0.000172" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Hyb_Position_Latitude_rad" startBit="8" numberBits="21" scaleFactor="0.000002924" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="AD">
+                        <buffer name="L255_Hyb_Position_Longitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_Position_Longitude_rdg" startBit="8" numberBits="21" scaleFactor="0.000172" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Hyb_Position_Longitude_rad" startBit="8" numberBits="21" scaleFactor="0.000002924" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="AE">
+                        <buffer name="L256_Hyb_Latitude_Fine" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_Latitude_Fine_rdg" startBit="8" numberBits="12" scaleFactor="0.000000083984375" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Hyb_Latitude_Fine_rad" startBit="8" numberBits="12" scaleFactor="0.000000001427734375" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="AF">
+                        <buffer name="L257_Hyb_Longitude_Fine" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_Longitude_Fine_rdg" startBit="8" numberBits="12" scaleFactor="0.000000083984375" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Hyb_Longitude_Fine_rad" startBit="8" numberBits="12" scaleFactor="0.000000001427734375" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                    </label>
+                    <label labelId="B1">
+                        <buffer name="L261_Hyb_Altitude" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_Altitude_ft" startBit="8" numberBits="21" scaleFactor="0.125" scaleOffset="0.0" signed="True" description="[ft]"/> -->
+                        <!-- <parameter name="Hyb_Altitude_m" startBit="8" numberBits="21" scaleFactor="0.0381" scaleOffset="0.0" signed="True" description="[m]"/> -->
+                    </label>
+                    <label labelId="B3">
+                        <buffer name="L263_Hyb_Flight_Path_Angle" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_Flight_Path_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                        <!-- <parameter name="Hyb_Flight_Path_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.0000116729736" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                    </label>
+                    <label labelId="B4">
+                        <buffer name="L264_Hyb_Horiz_FOM" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Hyb_Horiz_FOM_nm" startBit="10" numberBits="19" scaleFactor="0.00006103515625" scaleOffset="0.0" signed="True" description="[nm]"/> -->
+                        <!-- <parameter name="Hyb_Horiz_FOM_m" startBit="10" numberBits="19" scaleFactor=" 0.113037109375" scaleOffset="0.0" signed="True" description="[m]"/> -->
+                    </label>
+                    <label labelId="B6">
+                        <buffer name="L266_Hyb_N_S_Velocity" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Hyb_N_S_Velocity_kmh" startBit="10" numberBits="19" scaleFactor="0.028937499999985" scaleOffset="0.0" signed="True" /> -->
+    				            <!-- <parameter name="Hyb_N_S_Velocity_mps" startBit="10" numberBits="19" scaleFactor="0.008038194444440" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="Hyb_N_S_Velocity_knts" startBit="10" numberBits="19" scaleFactor="0.015625" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="Hyb_N_S_Velocity_RAW" startBit="10" numberBits="19" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="B7">
+                        <buffer name="L267_Hyb_E_W_Velocity" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Hyb_E_W_Velocity_kmh" startBit="10" numberBits="19" scaleFactor="0.028937499999985" scaleOffset="0.0" signed="True" /> -->
+    					          <!-- <parameter name="Hyb_E_W_Velocity_mps" startBit="10" numberBits="19" scaleFactor="0.008038194444440" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="Hyb_E_W_Velocity_knts" startBit="10" numberBits="19" scaleFactor="0.015625" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="Hyb_E_W_Velocity_RAW" startBit="10" numberBits="19" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="BC">
+                        <buffer name="L274_GPIRS_Senzor_Status" depth="1" parityEnabled="true"/>
+                         <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Secondary_GPS_Sensor_Validity" startBit="14" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Primary_GPS_Sensor_Validity" startBit="16" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="GPIRS_Output_Mode" startBit="25" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Number_Of_Satellites_Tracked_(MSB)" startBit="14" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>
+                    <label labelId="E5">
+                        <buffer name="L345_Hybrid_Vertical_Velocity" depth="1" parityEnabled="true"/>
+                        <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                        <!-- <parameter name="Hyb_Vert_Velocity_kmh" startBit="10" numberBits="19" scaleFactor="0.002285999875" scaleOffset="0.0" signed="True" /> -->
+    					           <!-- <parameter name="Hyb_Vert_Velocity_mps" startBit="10" numberBits="19" scaleFactor="0.0006349999652778" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="Hyb_Vert_Velocity_knts" startBit="10" numberBits="19" scaleFactor="0.001234342375" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="Hyb_Vert_Velocity_fpm" startBit="10" numberBits="19" scaleFactor="0.125" scaleOffset="0.0" signed="True" /> -->
+                        <!-- <parameter name="SSM" startBit="29" numberBits="2" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> --> 
+                    </label>
+                    <label labelId="EB">
+                        <buffer name="L353_GPIRS_Maintenance_Word" depth="1" parityEnabled="true"/>
+                         <!-- <parameter name="Whole_Frame" startBit="0" numberBits="32" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Primary_Invalid_Receiver_Data_Test" startBit="8" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Secondary_Invalid_Receiver_Data_Test" startBit="9" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Primary_Time_Mark_Present_Test" startBit="12" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Secondary_Time_Mark_Present_Test" startBit="13" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Primary_GPS_Senzor_Status_Freshness_Test" startBit="15" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Secondary_GPS_Senzor_Status_Freshness_Test" startBit="16" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Autonomous_IRS_Latitude_Miscompare_Test" startBit="17" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Hybrid_HIL_Source" startBit="18" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Autonomous_IRS_Longitude_Miscompare_Test" startBit="19" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                         <!-- <parameter name="Hybrid_Critical_Fault" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    </label>                   
+                </labels>
+            </Rx>
+        </channel429>
+</board429>

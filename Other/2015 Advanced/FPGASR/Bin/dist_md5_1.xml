@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?><FCIV>
+<FILE_ENTRY><name>nidist.id</name><MD5>rocUBI7PXIqz2Q46R2fSOA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>patents.txt</name><MD5>Ba5C157GSj813E349HZ3lA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>setup.exe</name><MD5>IPNt1ajRKHwC4Omtzgc38g==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>setup.ini</name><MD5>4twewOV09GoZYYXqOkL0sw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\data0009.dll</name><MD5>Hd8fQyIGHj2F1dGofu4CkA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\merged.cab</name><MD5>tRF61R5jH5NsTcZ+gbnBdw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\MIFSystemUtility.dll</name><MD5>53q5mAF+exLt8ViNlKKlZg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\niPie.exe</name><MD5>xtqTpLKrI/UlThTVqwgthw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\nistdtrans0007.mst</name><MD5>Vr/yAmY7O+enKba2nbBMLw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\nistdtrans0012.mst</name><MD5>bOzgpTV+w9B+Wnh6RGXfsQ==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\nistdtrans0017.mst</name><MD5>UpjzpjQ7KsGgejlWav/lmg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\nistdtrans0018.mst</name><MD5>WAuMlcJNIg3RZ7ov+3w62g==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\nistdtrans2052.mst</name><MD5>EKRLsiT8sGTYFCFuKDIDGw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\nistdtransbase.mst</name><MD5>5ekP/9qWiOlsuNsj0Ye9wQ==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\notify.dll</name><MD5>4vr9Lt7uE5d4fRi28p8tKA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\notifyupdates.dll</name><MD5>x1lYb34gqrtfd3Sm3OKbvQ==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\updateInfo.xml</name><MD5>gobY53mmVeu6qSfGnAwNwA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Bin\WindowsInstaller-KB893803-v2-x86.exe</name><MD5>NC95M3dldgrU45LrZ9XtLA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\Apache 2.0 License - English.pdf</name><MD5>7e4RClOSXb1hx4DMiW/u+Q==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\GNU Lesser General Public License 2.1 - English.rtf</name><MD5>W4dkNM8PAMILJK1ufLvyzA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\NI Labs License Agreement - English.rtf</name><MD5>YYOUvZE6RFbLYZf6poHGAg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\NI Released License Agreement - English.rtf</name><MD5>NClQMEt5jbqzAvgkzFxKqg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\NI Released License Agreement - French.rtf</name><MD5>0422JHNyMn78OZDm3wmOGA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\NI Released License Agreement - German.rtf</name><MD5>1Yzt7mYJreJVBdPJzO9tWQ==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\NI Released License Agreement - Italian.rtf</name><MD5>nmD8CeyhqD96SyhMk+zqlg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\NI Released License Agreement - Japanese.rtf</name><MD5>Iag2Z1IJ3UyqCJkCuj/bIw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\NI Released License Agreement - Korean.rtf</name><MD5>Pf1bxvdnpM5dMCLB6wASTw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\NI Released License Agreement - Simplified Chinese.rtf</name><MD5>jDQTsdJcuzb+1jRbleVCvQ==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\NI Released License Agreement - Spanish.rtf</name><MD5>3T4cPSDl1Ac0JsXU8g6vYw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\UPX 1.0 license - English.pdf</name><MD5>nY6hy9jKJMfaLDuekXMlVA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Licenses\wxWindows 3.1 License - English.pdf</name><MD5>5D54HNiQLmfAFPTvJwY1Ww==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\EULADepot\EULADep2.cab</name><MD5>IelefRl8WNwSqk6Iv8WW4A==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\EULADepot\EULADepot2.msi</name><MD5>noGCjzM7g7SplrjF9G7BHA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\EULADepot\EULADepot2_mft.cab</name><MD5>eG8rSI7Cv0gK7H0I14o8uQ==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\EULADepot\NIYouLAs.bin</name><MD5>WlwgvPBFdM9OEXGISu+VWQ==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\FPGA_SR_EX\FPGAS00\FPGAS00.cab</name><MD5>ThA4ZCqgexxhJe2+v0iiMQ==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\FPGA_SR_EX\FPGAS00\FPGA_SR_EX_64.msi</name><MD5>6NiJrqvYMUmsBvveT8VO/g==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\FPGA_SR_EX\FPGASREX\FPGASREX.cab</name><MD5>gWF+UTjW9pw1uskNUtH8qA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\FPGA_SR_EX\FPGASREX\FPGA_SR_EX.msi</name><MD5>RYSctiMmyGH+J9XvWQF8Sw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\FPGA_SR_EX\FPGASREX\FPGA_SR_EX_mft.cab</name><MD5>3ibf4I0vgAeRqN6NuK2U4A==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\MDF\MDF\MDFSupport.msi</name><MD5>EYYchnLbuHoW0b6evoL/cg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\MDF\MDF\MDFSupport1.cab</name><MD5>uhPyHz6uBk+ruwaIMMXW1g==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\MDF\MDF\MDFSupport_mft.cab</name><MD5>24c++YC6cTJO5baq2kpTQA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\MetaUninstaller\MU\MetaUninstaller.msi</name><MD5>9oo4t02y8ucdL+DWKchKpA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\MetaUninstaller\MU\MetaUninstallerR1.cab</name><MD5>PZo2VtiVEb4oOe7+gkdCAw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\MetaUninstaller\MU\MetaUninstaller_mft.cab</name><MD5>MSlr2R1jxa0PaKxP7y9eFA==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\NI-RIO_FPGA_SR\fpgasr32.cab</name><MD5>EqxOxbqkmxzWApIN5mhhsg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\NI-RIO_FPGA_SR\fpgasr32.msi</name><MD5>nQSkwUk+M0WzvzNK3c4KOg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\NI-RIO_FPGA_SR\fpgasr32_mft.cab</name><MD5>hbxJQxs/eTszeSU29znkUQ==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\NI-RIO_FPGA_SR_64\fpgasr64.cab</name><MD5>gOfhM2GB+FgCOFWhRPFdIw==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\NI-RIO_FPGA_SR_64\fpgasr64.msi</name><MD5>kj8JdcXW5yUzKKyu3WvaOg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\NI-RIO_FPGA_SR_64\fpgasr64_mft.cab</name><MD5>5flQT/tQLL9g0skvVND+BQ==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\SecurityUpdate_KB67L8LCQW_KillBit\KillBit.msi</name><MD5>N+W51Mln4/Dq2t6m7YVSrg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\SecurityUpdate_KB67L8LCQW_KillBit\KillBit64.msi</name><MD5>WyHmXBk8QJt6Ne1JYmcBvg==</MD5></FILE_ENTRY>
+<FILE_ENTRY><name>Products\SecurityUpdate_KB67L8LCQW_KillBit\KillBit_mft.cab</name><MD5>3VyV8femael2cr0jF1fJ+w==</MD5></FILE_ENTRY>
+</FCIV>

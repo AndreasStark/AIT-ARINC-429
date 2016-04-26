@@ -41,7 +41,15 @@
 					<Path>Custom Devices\AIT 429\c\SEA ARINC Engine VxWorks.llb\AIT 429 RT Driver VI.vi</Path>
 				</Source>
 				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\AIT 429\c\SEA ARINC Engine VxWorks.llb\AIT 429 RT Driver VI.vi</RealTimeSystemDestination>
-			</Source>			
+			</Source>	
+			<Source>
+				<SupportedTarget>Linux_x64</SupportedTarget>
+				<Source>
+					<Type>To Common Doc Dir</Type>
+					<Path>Custom Devices\AIT 429\home\lvuser\SEA ARINC Engine Linux_x64.llb\AIT 429 RT Driver VI.vi</Path>
+				</Source>
+				<RealTimeSystemDestination>c:\ni-rt\NIVeriStand\Custom Devices\AIT 429\SEA ARINC Engine Linux_x64.llb\AIT 429 RT Driver VI.vi</RealTimeSystemDestination>
+			</Source>
 		</SourceDistribution>
 	</CustomDeviceVI>
 	<Dependencies>

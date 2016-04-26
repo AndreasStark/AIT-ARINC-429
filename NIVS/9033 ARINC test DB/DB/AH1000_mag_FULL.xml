@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<board429 xmlns="http://www.aviftech.com/Schemas/Databus/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.aviftech.com/Schemas/Databus/ file:///C:/Program%20Files%20(x86)/AIT/Flight%20Simulyzer/AIT_429.xsd" dataRateModifier="STANDARD" lowSpeedSelection="INTERMEDIATE_LOW_SPEED" sdiModeEnabled="false">
+    <boardIndex>1</boardIndex>
+    <channel429 channelNumber="2" name="AH-1000" channelSpeed="HIGH_SPEED_CHANNEL">
+        <Rx>
+            <chronMonitor/>
+            <labels>
+                <label labelId="D0">
+                    <buffer name="L320_Magnetic_Heading" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Magnetic_Heading_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                    <!-- <parameter name="Magnetic_Heading_Angle_rad" startBit="10" numberBits="19" scaleFactor=" 0.00000020373" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                </label>
+                <label labelId="0C">
+                    <buffer name="L014_Magnetic_Heading_BCD" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Magnetic_Heading_Angle_Hundreds_of_degrees_rdg" startBit="26" numberBits="3" scaleFactor="1" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                    <!-- <parameter name="Magnetic_Heading_Angle_Tens of degrees_rdg" startBit="22" numberBits="4" scaleFactor="1" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                    <!-- <parameter name="Magnetic_Heading_Angle_Units of a degree_rdg" startBit="18" numberBits="4" scaleFactor="1" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                    <!-- <parameter name="Magnetic_Heading_Angle_Tenths of a degree_rdg" startBit="14" numberBits="4" scaleFactor="1" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                    <!-- <parameter name="Magnetic_Heading_Angle_Hundreds_of_degrees_rad" startBit="26" numberBits="3" scaleFactor=" 0.0170" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                    <!-- <parameter name="Magnetic_Heading_Angle_Tens of degrees_rad" startBit="22" numberBits="4" scaleFactor=" 0.0170" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                    <!-- <parameter name="Magnetic_Heading_Angle_Units of a degree_rad" startBit="18" numberBits="4" scaleFactor=" 0.0170" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                    <!-- <parameter name="Magnetic_Heading_Angle_Tenths of a degree_rad" startBit="14" numberBits="4" scaleFactor=" 0.0170" scaleOffset="0.0" signed="False" description="[rdg]"/> -->
+                </label>
+                <label labelId="C0">
+                    <buffer name="L300_MSU_heading" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="MSU_Heading_rdg" startBit="13" numberBits="16" scaleFactor="0.0054931640625" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                    <!-- <parameter name="MSU_Heading_rad" startBit="13" numberBits="16" scaleFactor=" 0.000093384" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                </label>
+                <label labelId="D4">
+                    <buffer name="L324_Pitch_Angle" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Pitch_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                    <!-- <parameter name="Pitch_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.00000020373" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                </label>
+                <label labelId="D5">
+                    <buffer name="L325_Roll_Angle" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Roll_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0000119842" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                    <!-- <parameter name="Roll_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.00000020373" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                </label>
+                
+          <!-- Ah-1000 custom upgrade START-->
+                <!-- Inertial rate labels replaced by Magnetic body data - range is +-10000 mGauss (earth magnetic field strength is under +-1000 mGauss) -->
+                <label labelId="DE">
+                    <buffer name="Mag_Body_Pitch" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Mag_Body_Pitch_raw" startBit="10" numberBits="19" scaleFactor="1.0" scaleOffset="0.0" signed="False" description=""/> -->
+                    <!-- <parameter name="Mag_Body_Pitch_mgauss" startBit="10" numberBits="19" scaleFactor="0.03814697265625" scaleOffset="0.0" signed="True" description="[mGauss]"/> -->
+                </label>
+                <label labelId="DF">
+                    <buffer name="Mag_Body_Roll" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Mag_Body_Roll_raw" startBit="10" numberBits="19" scaleFactor="1.0" scaleOffset="0.0" signed="False" description=""/> -->
+                    <!-- <parameter name="Mag_Body_Roll_mgauss" startBit="10" numberBits="19" scaleFactor="0.03814697265625" scaleOffset="0.0" signed="True" description="[mGauss]"/> -->
+                </label>
+                <label labelId="C1">
+                    <buffer name="Mag_Body_Yaw" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Mag_Body_Yaw_raw" startBit="10" numberBits="19" scaleFactor="1.0" scaleOffset="0.0" signed="False" description=""/> -->
+                    <!-- <parameter name="Mag_Body_Yaw_mgauss" startBit="10" numberBits="19" scaleFactor="0.03814697265625" scaleOffset="0.0" signed="True" description="[mGauss]"/> -->
+                </label>
+          <!-- Ah-1000 custom upgrade END-->
+                
+                <label labelId="D6">
+                    <buffer name="L326_Body_Pitch_Rate" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Body_Pitch_Rate_rdg_s" startBit="10" numberBits="19" scaleFactor="0.00000852212" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                    <!-- <parameter name="Body_Pitch_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.00000014488" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                </label>
+                <label labelId="D7">
+                    <buffer name="L327_Body_Roll_Rate" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Body_Roll_Rate_rds_s" startBit="10" numberBits="19" scaleFactor="0.00000852212" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                    <!-- <parameter name="Body_Roll_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.00000014488" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                </label>
+                <label labelId="D8">
+                    <buffer name="L330_Body_Yaw_Rate" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Body_Yaw_Rate_rds_s" startBit="10" numberBits="19" scaleFactor="0.00000852212" scaleOffset="0.0" signed="True" description="[rdg/s]"/> -->
+                    <!-- <parameter name="Body_Yaw_Rate_rad_s" startBit="10" numberBits="19" scaleFactor="0.00000014488" scaleOffset="0.0" signed="True" description="[rad/s]"/> -->
+                </label>
+                <label labelId="D9">
+                    <buffer name="L331_Body_Longitudinal_Acceleration" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Body_Long_Acc" startBit="10" numberBits="19" scaleFactor="0.0000152588" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                </label>
+                <label labelId="DA">
+                    <buffer name="L332_Body_Lateral_Acceleration" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Body_Lateral_Acceleration" startBit="10" numberBits="19" scaleFactor="0.0000152588" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                </label>
+                <label labelId="DB">
+                    <buffer name="L333_Body_Normal_Acceleration" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Body_Normal_Acceleration" startBit="10" numberBits="19" scaleFactor="0.0000152588" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                </label>
+                 <label labelId="F4">
+                    <buffer name="L364_Vertical_Acceleration" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Vertical_Acceleration" startBit="16" numberBits="13" scaleFactor="0.0009765625" scaleOffset="0.0" signed="True" description="[g]"/> -->
+                </label>
+                <label labelId="F5">
+                    <buffer name="L365_Inertial_Vertical_Speed" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Inertial_Vertical_Speed_ft_s" startBit="13" numberBits="16" scaleFactor="1" scaleOffset="0.0" signed="True" description="[ft/s]"/> -->
+                    <!-- <parameter name="Inertial_Vertical_Speed_m_s" startBit="13" numberBits="16" scaleFactor=" 0.305" scaleOffset="0.0" signed="True" description="[m/s]"/> -->
+                </label>
+                <label labelId="D2">
+                    <buffer name="L322_Flight_Path_Angle" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Flight_Path_Angle_rdg" startBit="10" numberBits="19" scaleFactor="0.0006866455078125" scaleOffset="0.0" signed="True" description="[rdg]"/> -->
+                    <!-- <parameter name="Flight_Path_Angle_rad" startBit="10" numberBits="19" scaleFactor="0.000011673" scaleOffset="0.0" signed="True" description="[rad]"/> -->
+                </label>
+                <label labelId="F1">
+                    <buffer name="L361_Inertial_Attitude" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Inertial_Attitude_ft" startBit="10" numberBits="19" scaleFactor="0.5" scaleOffset="0.0" signed="True" description="[ft]"/> -->
+                    <!-- <parameter name="Inertial_Attitude_m" startBit="10" numberBits="19" scaleFactor=" 0.1524" scaleOffset="0.0" signed="True" description="[m]"/> -->
+                </label>
+                 <label labelId="B8">
+                    <buffer name="L270_AHRS_Discrete_1" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="Attitude_AlignMode" startBit="10" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Basic_Mode" startBit="11" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Normal_Attitude_Mode" startBit="12" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Magnetic_Heading_Mode" startBit="13" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Attitude_Invalid" startBit="14" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="DG_Heading_Mode" startBit="15" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="TAS_Invalid" startBit="17" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="AHRU_fault" startBit="18" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Heading_Align_Mode" startBit="19" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Heading_Invalid_Mode" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="External_Confguration_Data_Fail" startBit="26" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                </label>
+                <label labelId="B9">
+                    <buffer name="L271_AHRS_Discrete_2" depth="1" parityEnabled="true"/>
+                    <!-- <parameter name="MSU_fail" startBit="10" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Valid_configuration_data_BITE_test" startBit="20" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Power_supply_BITE_test" startBit="21" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Gyro_BITE_Test" startBit="22" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Accel_BITE_test" startBit="23" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Spare_BITE_Test_1" startBit="25" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Spare_BITE_Test_2" startBit="26" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Spare_BITE_Test_3" startBit="27" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                    <!-- <parameter name="Unit_Position_Program_mismatch" startBit="28" numberBits="1" scaleFactor="1.0" scaleOffset="0.0" signed="False" /> -->
+                </label>
+            </labels>
+        </Rx>
+    </channel429>
+</board429>
