@@ -5,7 +5,7 @@
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
-		<Property Name="CCSymbols" Type="Str">Driver,Off;CopyConvert,True;Debug,False;</Property>
+		<Property Name="CCSymbols" Type="Str">Driver,Off;CopyConvert,True;Debug,FALSE;</Property>
 		<Property Name="IOScan.Faults" Type="Str">1.0,0;</Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
 		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
@@ -18,12 +18,16 @@
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="server.tcp.acl" Type="Str">0800000008000000</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
 		<Property Name="server.tcp.port" Type="Int">0</Property>
-		<Property Name="server.tcp.serviceName" Type="Str">My Computer/VI Server</Property>
+		<Property Name="server.tcp.serviceName" Type="Str"></Property>
 		<Property Name="server.tcp.serviceName.default" Type="Str">My Computer/VI Server</Property>
+		<Property Name="server.vi.access" Type="Str"></Property>
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
+		<Property Name="server.viscripting.showScriptingOperationsInContextHelp" Type="Bool">false</Property>
+		<Property Name="server.viscripting.showScriptingOperationsInEditor" Type="Bool">false</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Custom Device" Type="Folder">
 			<Item Name="Utility" Type="Folder">
@@ -151,6 +155,7 @@
 			</Item>
 			<Item Name="SEA_9811_RT_FIFO_processor.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_RT_FIFO_processor.vi"/>
 			<Item Name="GetSDFPath.vi" Type="VI" URL="../System Explorer/SubVIs/Select FPGA/GetSDFPath.vi"/>
+			<Item Name="SEA_9811_PathToLinuxPath.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_PathToLinuxPath.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Configuration Release" Type="Source Distribution">
@@ -609,6 +614,7 @@ DirectoryIndex index.htm
 			<Item Name="SEA_9811_get_VS_conf.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_get_VS_conf.vi"/>
 			<Item Name="SEA_9811_Init.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Init.vi"/>
 			<Item Name="SEA_9811_InitDynamicFPGA.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_InitDynamicFPGA.vi"/>
+			<Item Name="SEA_9811_PathToLinuxPath.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_PathToLinuxPath.vi"/>
 			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
 			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
 			<Item Name="SEA_9811_reset_rx_word_counter.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_reset_rx_word_counter.vi"/>
@@ -850,6 +856,7 @@ DirectoryIndex index.htm
 			<Item Name="SEA_9811_get_VS_conf.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_get_VS_conf.vi"/>
 			<Item Name="SEA_9811_Init.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Init.vi"/>
 			<Item Name="SEA_9811_InitDynamicFPGA.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_InitDynamicFPGA.vi"/>
+			<Item Name="SEA_9811_PathToLinuxPath.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_PathToLinuxPath.vi"/>
 			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
 			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
 			<Item Name="SEA_9811_reset_rx_word_counter.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_reset_rx_word_counter.vi"/>
@@ -1088,6 +1095,7 @@ AddOutputFilter chunkFilter
 			<Item Name="SEA_9811_get_VS_conf.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_get_VS_conf.vi"/>
 			<Item Name="SEA_9811_Init.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Init.vi"/>
 			<Item Name="SEA_9811_InitDynamicFPGA.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_InitDynamicFPGA.vi"/>
+			<Item Name="SEA_9811_PathToLinuxPath.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_PathToLinuxPath.vi"/>
 			<Item Name="SEA_9811_Read.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read.vi"/>
 			<Item Name="SEA_9811_Read_word.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_Read_word.vi"/>
 			<Item Name="SEA_9811_reset_rx_word_counter.vi" Type="VI" URL="../SEA 9811 FPGA driver/RT/SEA_9811_reset_rx_word_counter.vi"/>
